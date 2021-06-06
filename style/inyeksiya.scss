@@ -1,0 +1,332 @@
+$main_font: "Montserrat", sans-serif;
+$primary_font: "Corinthia", sans-serif;
+
+.header_main.inyeksiya {
+	.slider_item {
+		background: url(../img/header_img_inyeksiya.png), no-repeat;
+		h1 {
+			width: 36%;
+		}
+	}
+}
+
+.header_number {
+	margin-right: 10px;
+}
+
+.header_buttons {
+	a.btn_circle {
+		position: relative;
+		margin-right: 35px;
+	}
+}
+
+.section_one_blocks {
+	.block_one {
+		margin-bottom: 10px;
+		.block_title {
+			display: none;
+		}
+
+		.block_boxes {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.box_left {
+				width: 66%;
+
+				h1 {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 35px;
+					line-height: 43px;
+					text-transform: uppercase;
+					color: #7449d0;
+					margin-bottom: 45px;
+				}
+
+				.box_list {
+					list-style: none;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin-bottom: 45px;
+
+					.list_item {
+						display: flex;
+						align-items: center;
+						.item_icon {
+							background: linear-gradient(90deg, #7449d0 0%, #7449d0 100%);
+							border-radius: 50%;
+							width: 20px;
+							height: 20px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin-right: 20px;
+							color: #fff;
+						}
+
+						.item_text {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+						}
+					}
+				}
+
+				p {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 150%;
+					color: #000000;
+				}
+			}
+
+			.box_right {
+				width: 32%;
+				background: linear-gradient(90deg, #8e67e1 0%, #a58af1 100%);
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+				border-radius: 30px;
+				padding: 36px 51px 27px 49px;
+				position: relative;
+
+				.right_img {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 70%;
+					height: 100%;
+					background: url(../img/inyeksiya/section_one-img.png);
+					background-size: contain;
+					background-position: 40px 117px;
+					background-repeat: no-repeat;
+					z-index: 1;
+				}
+
+				h3 {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 36px;
+					letter-spacing: 0.005em;
+					color: #ffffff;
+					margin-bottom: 22px;
+					z-index: 2;
+				}
+
+				p {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 150%;
+					color: #ffffff;
+					z-index: 2;
+				}
+			}
+		}
+	}
+
+	.block_two {
+		.block_title {
+			width: 70%;
+			margin-bottom: 25px;
+			h1 {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 35px;
+				line-height: 43px;
+				text-transform: uppercase;
+				color: #7449d0;
+			}
+		}
+
+		.block_boxes {
+			display: flex;
+			justify-content: space-between;
+
+			.box_left {
+				width: 48%;
+			}
+
+			.box_right {
+				width: 48%;
+			}
+
+			.box_item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 30px;
+				.item_icon {
+					margin-right: 30px;
+				}
+
+				.item_text {
+					h4 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 16px;
+						line-height: 171.5%;
+						text-transform: uppercase;
+						color: #000000;
+						margin-bottom: 5px;
+					}
+					p {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 171.5%;
+						text-transform: uppercase;
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+}
+
+.section_two {
+	.price_table {
+		width: 100%;
+		margin-bottom: 40px;
+		.price_list {
+			width: 100%;
+			.list_head {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 4px 30px;
+
+				p {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 150%;
+					text-transform: uppercase;
+					color: #000000;
+				}
+			}
+
+			.list_item {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 4px 30px;
+
+				.item_text {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 150%;
+					color: #000000;
+				}
+
+				.item_price-number {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 150.5%;
+					color: #7449d0;
+				}
+
+				&:nth-child(even) {
+					background: #eff9ef;
+				}
+			}
+		}
+	}
+}
+
+.section_three {
+	margin-bottom: 0;
+	padding-bottom: 120px;
+	.section_three-title {
+		margin: 40px 0;
+	}
+
+	.numbered_boxes {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		.box {
+			display: flex;
+			align-items: center;
+			width: 24%;
+			margin-right: 10px;
+			margin-bottom: 40px;
+		}
+		.box_number {
+			width: 16%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #8649ff46;
+			border-radius: 0px 13px;
+			padding: 6px 0;
+			margin-right: 15px;
+			& span {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 30px;
+				text-transform: uppercase;
+				color: #8649ff;
+			}
+		}
+
+		.box_text {
+			width: 84%;
+			p {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 20px;
+				color: #000000;
+			}
+		}
+	}
+}
+
+.section_four {
+	.section_four-title {
+		width: 50%;
+	}
+
+	&-slider {
+		.slider_item {
+			.item_text {
+				p {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 150%;
+					text-align: center;
+					text-transform: uppercase;
+					color: #000000;
+				}
+			}
+		}
+	}
+}
