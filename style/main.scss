@@ -253,6 +253,10 @@ video {
 		position: relative;
 		display: flex;
 		align-items: center;
+		a.btn_circle {
+			position: relative;
+			margin-right: 35px;
+		}
 	}
 
 	&_menu {
@@ -7861,7 +7865,6 @@ video {
 	}
 
 	.section_four-cart .cart_right .cart_btn .btn {
-		width: 80%;
 		margin: 0 auto;
 	}
 

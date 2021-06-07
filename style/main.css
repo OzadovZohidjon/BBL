@@ -324,6 +324,11 @@ video {
           align-items: center;
 }
 
+.header_buttons a.btn_circle {
+  position: relative;
+  margin-right: 35px;
+}
+
 .header_menu {
   position: relative;
   background-color: #f2f2f2;
@@ -7350,7 +7355,6 @@ video {
     font-size: 22px;
   }
   .section_four-cart .cart_right .cart_btn .btn {
-    width: 80%;
     margin: 0 auto;
   }
   .section_six-blocks .videa_link {
