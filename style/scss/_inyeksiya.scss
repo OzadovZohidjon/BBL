@@ -4,18 +4,28 @@ $primary_font: "Corinthia", sans-serif;
 	.header_main.inyeksiya_header-main {
 		.slider_item {
 			background: url(../img/header_img_inyeksiya.png), no-repeat;
-			// h1 {
-			// 	width: 36%;
-			// }
+			h1 {
+				width: 36%;
+			}
 		}
+	}
+
+	.header_about {
+		margin-right: 110px;
+	}
+
+	.header_menu .menu_item {
+		margin-right: 55px;
+	}
+
+	.btn_purple {
+		margin-right: 50px * 2;
 	}
 
 	.header_number {
 		margin-right: 10px;
 	}
-	.header_menu .menu_item {
-		margin-right: 5px;
-	}
+
 	.header_buttons {
 		a.btn_circle {
 			position: relative;

@@ -117,13 +117,7 @@ $('.section_three-slider').slick({
 });
 
 // Slider two end
-const br = document.querySelector('.br');
 
-if (window.innerWidth < 668) {
-    br.innerHTML = ' Эффект <br/> от первой процедуры';
-} else {
-    br.innerHTML = ' Эффект от первой процедуры';
-}
 
 // Slider three start
 

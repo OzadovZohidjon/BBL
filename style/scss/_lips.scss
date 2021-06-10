@@ -1,6 +1,7 @@
 $main_font: "Montserrat", sans-serif;
 $primary_font: "Corinthia", sans-serif;
 .lips {
+	// HEADER - START
 	.header_main.lips_header-main {
 		.slider_item {
 			background: url(../../img/lips/header_img.png);
@@ -21,4 +22,702 @@ $primary_font: "Corinthia", sans-serif;
 	.btn_purple {
 		margin-right: 50px * 2;
 	}
+
+	// HEADER - END
+
+	// SECTION - ONE - START
+	.warning {
+		width: 100%;
+		position: relative;
+		background: #eff9ef;
+		box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		padding: 20px 0 20px 45px;
+		margin: 40px 0;
+
+		img {
+			margin-right: 50px;
+		}
+
+		p {
+			font-family: $main_font;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 178%;
+			color: #000000;
+		}
+	}
+	.section_one {
+		&-blocks {
+			.block_left {
+				&-img {
+					background-image: url(../../img/lips/section_one-img.png);
+				}
+
+				&-content {
+					.content_title {
+						font-size: 16px;
+						line-height: 30px;
+					}
+				}
+			}
+
+			.block_right {
+				position: relative;
+				background: linear-gradient(90deg, #8e67e1 0%, #a58af1 100%);
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+				.right_img {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 70%;
+					height: 100%;
+					background: url(../img/inyeksiya/section_one-img.png);
+					background-size: contain;
+					background-position: 40px 137px;
+					background-repeat: no-repeat;
+					z-index: 1;
+				}
+
+				h3 {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 20px;
+					line-height: 36px;
+					letter-spacing: 0.005em;
+					color: #ffffff;
+					margin-bottom: 22px;
+					z-index: 2;
+				}
+
+				p {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 150%;
+					color: #ffffff;
+					z-index: 2;
+				}
+			}
+		}
+	}
+
+	// SECTION - ONE - END
+
+	// SECTION - TWO - START
+
+	.section_two {
+		&-title {
+			width: 40%;
+		}
+		.price_table {
+			.price_list {
+				list-style: none;
+				height: auto;
+				position: relative;
+				width: 100%;
+				margin-bottom: 40px;
+
+				.list_head,
+				.list_item {
+					display: flex;
+					align-items: center;
+					padding-left: 35px;
+
+					.left {
+						width: 70%;
+					}
+
+					.right {
+						width: 30%;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+
+						.action {
+							width: 50%;
+							text-align: center;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 59%;
+							text-transform: uppercase;
+							color: #d04949;
+						}
+
+						.price {
+							width: 50%;
+							text-align: center;
+						}
+					}
+				}
+
+				.list_head {
+					margin-bottom: 20px;
+					.left {
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 150%;
+							text-transform: uppercase;
+							color: #000000;
+						}
+					}
+
+					.right {
+						.price {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 150%;
+							text-transform: uppercase;
+							color: #000000;
+						}
+					}
+				}
+
+				.list_item {
+					padding: 9px 0 0 35px;
+					.left {
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+						}
+					}
+
+					.right {
+						.price {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 24px;
+							line-height: 150.5%;
+							color: #7449d0;
+						}
+					}
+
+					&:nth-child(even) {
+						background-color: #eff9ef;
+					}
+				}
+			}
+		}
+
+		&-icons {
+			.section_two-title {
+				width: 50%;
+			}
+
+			.content {
+				margin-bottom: 50px;
+				p {
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 16px;
+					line-height: 150%;
+					color: #000000;
+				}
+			}
+
+			.icons_block {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 60px;
+
+				.block {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-right: 60px;
+					&_img {
+						margin-bottom: 15px;
+						width: 55px;
+						height: 55px;
+
+						img {
+							width: 100%;
+						}
+					}
+
+					h3 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 18px;
+						line-height: 150%;
+						text-align: center;
+						margin-bottom: 10px;
+					}
+
+					p {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 17px;
+						text-align: center;
+						color: #000000;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		.section_four-title {
+			width: 70%;
+		}
+
+		.block_boxes {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 30px;
+
+			.box_left {
+				width: 48%;
+			}
+
+			.box_right {
+				width: 48%;
+			}
+
+			.box_item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 30px;
+				.item_icon {
+					margin-right: 30px;
+				}
+
+				.item_text {
+					h4 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 16px;
+						line-height: 171.5%;
+						text-transform: uppercase;
+						color: #000000;
+						margin-bottom: 5px;
+					}
+					p {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 171.5%;
+						text-transform: uppercase;
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+
+	// SECTION - TWO - END
+
+	// SECTION - THREE - START
+
+	.section_three {
+		&-img_boxes {
+			position: relative;
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		&-title {
+			width: 70%;
+		}
+
+		.section_four-cart {
+			margin: 50px 0;
+		}
+
+		.img_box {
+			position: relative;
+			width: 18%;
+			margin-right: 20px;
+
+			.img_layer {
+				width: 100%;
+				height: 90%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: linear-gradient(90deg, #472297 0%, #7449d0 100%);
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.3);
+				border-radius: 30px 20px 30px 30px;
+				z-index: -1;
+			}
+			img {
+				width: 100%;
+				z-index: 2;
+			}
+		}
+
+		&-blocks {
+			.block_right {
+				display: flex;
+				align-items: center;
+				background: #ffffff;
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+				border-radius: 30px;
+				border: 1px solid #7449d0;
+				padding: 0 0px 30px 30px;
+
+				.content {
+					width: 60%;
+
+					p {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 150%;
+						color: #000000;
+
+						&:first-child {
+							font-weight: 600;
+						}
+					}
+
+					h3 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 35px;
+						line-height: 43px;
+						text-transform: uppercase;
+						color: #472297;
+						margin: 15px 0;
+					}
+				}
+
+				.doctor_info {
+					width: 40%;
+
+					img {
+						width: 100%;
+						margin-bottom: 25px;
+					}
+
+					.name {
+						width: 70%;
+						margin: 0 auto;
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 18px;
+						line-height: 120%;
+						text-align: center;
+						color: #000000;
+						margin-bottom: 7px;
+					}
+
+					.job {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 13px;
+						line-height: 16px;
+						text-align: center;
+						color: #7449d0;
+					}
+				}
+			}
+		}
+	}
+
+	// SECTION - THREE - END
+
+	// MEDIA QUERIES START
+	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+		// HEADER - START
+		.header_main.lips_header-main {
+			.slider_item {
+				background: url(../../img/lips/header_img.png);
+				h1 {
+					width: 70%;
+				}
+			}
+		}
+
+		.header_about {
+			margin-right: 20px;
+		}
+
+		.header_menu .menu_item {
+			margin-right: 15px;
+		}
+
+		.btn_purple {
+			margin-right: 10px * 2;
+			color: #fff;
+		}
+
+		// HEADER - END
+
+		// SECTION - ONE - START
+
+		.section_one {
+			.section_one-content .content_title {
+				width: 70%;
+				font-size: 35px;
+				line-height: 43px;
+			}
+			.content_texts-tablet {
+				.content_texts-blocks {
+					.block_left {
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+						}
+					}
+					.block_right {
+						position: relative;
+						background: linear-gradient(90deg, #8e67e1 0%, #a58af1 100%);
+						box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+
+						height: 100%;
+						.right_img {
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							width: 90%;
+							height: 100%;
+							background: url(../img/inyeksiya/section_one-img.png);
+							background-size: contain;
+							background-position: 60px 107px;
+							background-repeat: no-repeat;
+							z-index: 1;
+						}
+
+						h3 {
+							position: relative;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 20px;
+							line-height: 36px;
+							letter-spacing: 0.005em;
+							color: #ffffff;
+							margin-bottom: 22px;
+							z-index: 2;
+						}
+
+						p {
+							position: relative;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: 500;
+							font-size: 18px;
+							line-height: 150%;
+							color: #ffffff;
+							z-index: 2;
+						}
+					}
+				}
+			}
+
+			&-blocks {
+				.block_left {
+					height: 350px;
+					&-img {
+						background-image: url(../../img/lips/section_one-img.png);
+					}
+
+					&-content {
+						padding: 50px 40px 40px 65px;
+						.content_title {
+							font-size: 16px;
+							line-height: 30px;
+						}
+					}
+				}
+
+				.block_right {
+					display: none;
+				}
+			}
+		}
+
+		// SECTION - ONE - END
+
+		// SECTION - TWO - START
+
+		.section_two {
+			&-title {
+				width: 60%;
+
+				h1 {
+					font-size: 35px;
+					line-height: 43px;
+				}
+			}
+
+			&-icons {
+				.section_two-title {
+					width: 70%;
+				}
+			}
+
+			.price_table {
+				.price_list {
+					.list_head,
+					.list_item {
+						.left {
+							width: 50%;
+						}
+
+						.right {
+							width: 50%;
+						}
+					}
+				}
+			}
+
+			.section_four-title {
+				width: 90%;
+				h1 {
+					font-size: 35px;
+				}
+			}
+		}
+
+		// SECTION - TWO - END
+
+		// SECTION - THREE - START
+
+		.section_three {
+			&-img_boxes {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+			}
+
+			&-title {
+				width: 90%;
+
+				h1 {
+					font-size: 35px;
+					line-height: 45px;
+				}
+			}
+
+			.section_four-cart {
+				margin: 50px 0;
+			}
+
+			.img_box {
+				width: 31%;
+				margin-bottom: 20px;
+			}
+
+			&-blocks {
+				.block_right {
+					display: flex;
+					align-items: center;
+					background: #ffffff;
+					box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+					border-radius: 30px;
+					border: 1px solid #7449d0;
+					padding: 0 0px 30px 30px;
+
+					.content {
+						width: 60%;
+
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+
+							&:first-child {
+								font-weight: 600;
+							}
+						}
+
+						h3 {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 35px;
+							line-height: 43px;
+							text-transform: uppercase;
+							color: #472297;
+							margin: 15px 0;
+						}
+					}
+
+					.doctor_info {
+						width: 40%;
+
+						img {
+							width: 100%;
+							margin-bottom: 25px;
+						}
+
+						.name {
+							width: 70%;
+							margin: 0 auto;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 18px;
+							line-height: 120%;
+							text-align: center;
+							color: #000000;
+							margin-bottom: 7px;
+						}
+
+						.job {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 13px;
+							line-height: 16px;
+							text-align: center;
+							color: #7449d0;
+						}
+					}
+				}
+			}
+		}
+
+		// SECTION - THREE - END
+	}
+
+	// MEDIA QUERIES END
 }

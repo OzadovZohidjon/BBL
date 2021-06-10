@@ -4308,6 +4308,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(".telmask").mask("+7(999) 999-99-99");
+
+
+        const br = document.querySelector('.br');
+
+        if (window.innerWidth < 668) {
+            br.innerHTML = ' Эффект <br/> от первой процедуры';
+        } else {
+            br.innerHTML = ' Эффект от первой процедуры';
+        }
     </script>
 </body>
 

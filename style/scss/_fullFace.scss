@@ -3,7 +3,9 @@ $primary_font: "Corinthia", sans-serif;
 .full_face {
 	.header_main.full_face_header-main {
 		.slider_item {
-			background: url(../../img/full_face/header_img.png), no-repeat;
+			background: url(../img/full_face/header_img.png);
+			background-size: cover;
+
 			h1 {
 				width: 45%;
 			}
@@ -23,6 +25,18 @@ $primary_font: "Corinthia", sans-serif;
 
 	.header_about {
 		margin-right: 115px;
+	}
+
+	.header_about {
+		margin-right: 110px;
+	}
+
+	.header_menu .menu_item {
+		margin-right: 55px;
+	}
+
+	.btn_purple {
+		margin-right: 50px * 2;
 	}
 
 	.section_one {
