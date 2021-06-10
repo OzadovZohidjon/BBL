@@ -2,6 +2,7 @@
 @import "./scss/style.scss";
 @import "./scss/_inyeksiya.scss";
 @import "./scss/_fullFace.scss";
+@import "./scss/_lips.scss";
 * {
 	margin: 0;
 	padding: 0;
@@ -280,11 +281,12 @@ video {
 			display: flex;
 			align-items: center;
 			list-style: none;
+			padding: 22px 0;
 
 			&_item {
 				position: relative;
-				padding: 25px 30px;
-				margin-right: 28px;
+				// padding: 25px 30px;
+				margin-right: 88px;
 
 				&::after {
 					content: " ";
@@ -304,9 +306,9 @@ video {
 					}
 				}
 
-				&:first-child {
-					padding: 25px 30px 25px 0;
-				}
+				// &:first-child {
+				// 	padding: 25px 30px 25px 0;
+				// }
 			}
 
 			&_item:last-child {
@@ -4173,7 +4175,6 @@ video {
 					font-size: 18px;
 					font-weight: bold;
 					line-height: 22px;
-					margin-bottom: 15px;
 					color: #000;
 
 					a {
@@ -4246,7 +4247,7 @@ video {
 			.menu {
 				justify-content: space-around;
 				&_item {
-					padding: 15px;
+					padding: 0;
 					margin-right: 0;
 				}
 
@@ -4255,7 +4256,7 @@ video {
 				}
 
 				&_link {
-					font-size: 12px;
+					font-size: 17px;
 				}
 			}
 		}
@@ -4273,20 +4274,21 @@ video {
 					background-size: cover;
 
 					h3 {
-						font-size: 20px;
+						font-size: 24px;
+						line-height: 133%;
 						margin-bottom: 20px;
 					}
 
 					h1 {
-						width: 52%;
-						font-size: 38px;
+						width: 55%;
+						font-size: 45px;
 						margin-bottom: 20px;
 					}
 
 					.btn {
 						width: 258px;
 						padding: 5px 15px 5px 5px;
-						font-size: 12px;
+						font-size: 15px;
 					}
 				}
 				.slick-arrow::before {
@@ -5803,7 +5805,7 @@ video {
 
 				&_item {
 					position: relative;
-					padding: 15px 10px;
+					padding: 0;
 					margin-right: 0;
 
 					&:nth-child(5),
@@ -5815,7 +5817,7 @@ video {
 				}
 
 				&_item:first-child {
-					padding: 15px 10px !important;
+					padding: 0 !important;
 				}
 
 				&_link {
