@@ -10,26 +10,9 @@ $primary_font: "Corinthia", sans-serif;
 		}
 	}
 
-	.header_about {
-		margin-right: 110px;
-	}
-
-	.header_menu .menu_item {
-		margin-right: 55px;
-	}
-
-	.btn_purple {
-		margin-right: 50px * 2;
-	}
-
-	.header_number {
-		margin-right: 10px;
-	}
-
-	.header_buttons {
-		a.btn_circle {
-			position: relative;
-			margin-right: 35px;
+	.header_menu {
+		.menu_item {
+			margin-right: 85px;
 		}
 	}
 
@@ -354,6 +337,11 @@ $primary_font: "Corinthia", sans-serif;
 	}
 
 	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+		.header_menu {
+			.menu_item {
+				margin-right: 0;
+			}
+		}
 		.section_one_blocks {
 			.block_one {
 				margin-bottom: 60px;

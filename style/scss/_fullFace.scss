@@ -19,24 +19,10 @@ $primary_font: "Corinthia", sans-serif;
 			}
 		}
 	}
-	.header_menu .menu_item {
-		margin-right: 5px;
-	}
-
-	.header_about {
-		margin-right: 115px;
-	}
-
-	.header_about {
-		margin-right: 110px;
-	}
-
-	.header_menu .menu_item {
-		margin-right: 55px;
-	}
-
-	.btn_purple {
-		margin-right: 50px * 2;
+	.header_menu {
+		.menu_item {
+			margin-right: 85px;
+		}
 	}
 
 	.section_one {

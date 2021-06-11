@@ -4,23 +4,16 @@ $primary_font: "Corinthia", sans-serif;
 	// HEADER - START
 	.header_main.lips_header-main {
 		.slider_item {
-			background: url(../../img/lips/header_img.png);
+			background: url(../img/lips/header_img.png);
 			h1 {
 				width: 50%;
 			}
 		}
 	}
-
-	.header_about {
-		margin-right: 110px;
-	}
-
-	.header_menu .menu_item {
-		margin-right: 55px;
-	}
-
-	.btn_purple {
-		margin-right: 50px * 2;
+	.header_menu {
+		.menu_item {
+			margin-right: 85px;
+		}
 	}
 
 	// HEADER - END
