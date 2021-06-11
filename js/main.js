@@ -255,6 +255,15 @@ $('.section_nine-slider').slick({
 
 // Slider seven end
 
+$('.img_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.images_slider-prev'),
+    nextArrow: $('.images_slider-next')
+});
+
+
 // Modals Start
 
 const bioModalOpenBtn = document.querySelectorAll('.slider_item-btn');
