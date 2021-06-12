@@ -57,6 +57,7 @@ $primary_font: "Corinthia", sans-serif;
 
 		.title_blocks {
 			display: flex;
+			justify-content: space-between;
 
 			.block_left {
 				width: 30%;
@@ -119,6 +120,11 @@ $primary_font: "Corinthia", sans-serif;
 			text-align: center;
 			text-transform: uppercase;
 			color: #000000;
+
+			span {
+				font-weight: normal;
+				text-transform: initial;
+			}
 		}
 
 		.advantages_block {
@@ -327,6 +333,7 @@ $primary_font: "Corinthia", sans-serif;
 
 		.icons {
 			height: auto;
+			margin-bottom: 45px;
 			&_block {
 				position: relative;
 				height: auto;
@@ -487,7 +494,758 @@ $primary_font: "Corinthia", sans-serif;
 			background-size: cover;
 			background-position: center;
 		}
+
+		.methods {
+			.methods_block {
+				height: auto;
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 25px;
+
+				.block {
+					width: 31%;
+					display: flex;
+					align-items: center;
+					margin-right: 20px;
+					margin-bottom: 25px;
+
+					.block_img {
+						margin-right: 20px;
+					}
+
+					.block_text {
+						h3 {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 18px;
+							line-height: 150%;
+							color: #000000;
+						}
+					}
+				}
+			}
+		}
+
+		.section_three-blocks {
+			.block_right {
+				position: relative;
+				display: flex;
+				align-items: center;
+				background: #ffffff;
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+				border-radius: 30px;
+				border: 1px solid #7449d0;
+				padding: 0 0px 30px 30px;
+
+				.table_content {
+					position: absolute;
+					display: none;
+					top: 15px;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 120%;
+					color: #000000;
+				}
+
+				.content {
+					width: 60%;
+
+					p {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 16px;
+						line-height: 150%;
+						color: #000000;
+
+						&:first-child {
+							font-weight: 600;
+						}
+					}
+
+					h3 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 35px;
+						line-height: 43px;
+						text-transform: uppercase;
+						color: #472297;
+						margin: 15px 0;
+					}
+				}
+
+				.doctor_info {
+					width: 40%;
+
+					img {
+						width: 100%;
+						margin-bottom: 25px;
+					}
+
+					.name {
+						width: 70%;
+						margin: 0 auto;
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 18px;
+						line-height: 120%;
+						text-align: center;
+						color: #000000;
+						margin-bottom: 7px;
+					}
+
+					.job {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 13px;
+						line-height: 16px;
+						text-align: center;
+						color: #7449d0;
+					}
+				}
+			}
+		}
 	}
 
 	// SECTON - TWO - END
+
+	.section_six-text {
+		p {
+			font-family: $main_font;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 150%;
+			color: #000000;
+		}
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+		.header_main.plazma_header-main {
+			.slider_item {
+				h1 {
+					width: 70%;
+				}
+			}
+		}
+		.header_menu {
+			.menu_item {
+				margin-right: 0px;
+			}
+		}
+
+		.section_one-content .content_texts {
+			display: unset;
+		}
+
+		.plazma .section_one .title_blocks .block_right {
+			width: 67%;
+		}
+	}
+
+	@media only screen and (max-width: 667.9px) {
+		.header_main.plazma_header-main {
+			.slider_item {
+				background: url(../img/plazma/header_img-mobile.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				h1 {
+					width: 70%;
+				}
+			}
+		}
+
+		.header_menu {
+			.menu_item {
+				margin-right: 0px;
+			}
+		}
+
+		.warning {
+			flex-direction: column;
+			align-items: center;
+			padding: 20px 20px 20px 40px;
+
+			img {
+				margin-bottom: 15px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 150%;
+			}
+		}
+
+		// SECTION - ONE - START
+
+		.section_one {
+			.container {
+				padding: 0 20px;
+			}
+
+			.section_one-content .content_title {
+				padding: 0;
+			}
+
+			.content_subtitle {
+				display: none;
+			}
+
+			.title_blocks {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: column;
+
+				.block_left {
+					width: 100%;
+					.box_list {
+						flex-direction: column;
+						margin-bottom: 5px;
+
+						.list_item {
+							margin-bottom: 15px;
+
+							.item_text {
+								font-weight: bold;
+							}
+						}
+					}
+				}
+
+				.block_right {
+					width: 100%;
+
+					.content_texts {
+						display: unset;
+					}
+				}
+			}
+		}
+
+		// SECTION - ONE - END
+
+		// SECTON - TWO - START
+		.section_two {
+			&-title {
+				width: 100%;
+			}
+
+			.section_four-slider .slider_item .item_text p {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 150%;
+				text-align: center;
+				text-transform: uppercase;
+				color: #000000;
+
+				span {
+					font-weight: normal;
+					text-transform: initial;
+				}
+			}
+
+			.advantages_block {
+				position: relative;
+				height: auto;
+
+				.block_title {
+					width: 80%;
+					margin-bottom: 40px;
+					h1 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 35px;
+						line-height: 43px;
+						text-transform: uppercase;
+						color: #7449d0;
+					}
+				}
+
+				.advantages_slider {
+					.slider_item {
+						display: flex;
+						justify-content: space-between;
+						margin-bottom: 30px;
+
+						.box_left {
+							width: 48%;
+						}
+
+						.box_right {
+							width: 48%;
+						}
+
+						.box_item {
+							display: flex;
+							align-items: center;
+							margin-bottom: 30px;
+							.item_icon {
+								margin-right: 30px;
+							}
+
+							.item_text {
+								h4 {
+									font-family: $main_font;
+									font-style: normal;
+									font-weight: bold;
+									font-size: 16px;
+									line-height: 171.5%;
+									text-transform: uppercase;
+									color: #000000;
+									margin-bottom: 5px;
+								}
+								p {
+									font-family: $main_font;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 14px;
+									line-height: 171.5%;
+									text-transform: uppercase;
+									color: #000000;
+								}
+							}
+						}
+					}
+				}
+				.slider_arrows {
+					position: absolute;
+					top: 0;
+					right: 0;
+					display: flex;
+					align-items: center;
+					background: #ffffff;
+					border-radius: 50px;
+
+					.arrow_prev,
+					.arrow_next {
+						width: 68px;
+						height: 40px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+
+						span {
+							padding-top: 20px;
+						}
+
+						span::before {
+							font-size: 25px;
+							line-height: 0;
+							padding-top: 10px;
+						}
+					}
+
+					.arrow_prev {
+						border-radius: 20px 0 0 20px;
+						background: #9d72f8;
+						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					}
+					.arrow_next {
+						border-radius: 0 20px 20px 0;
+						background: #7449d0;
+						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					}
+				}
+			}
+
+			.features_block {
+				position: relative;
+				height: auto;
+
+				.block_title {
+					width: 80%;
+					margin-bottom: 40px;
+					h1 {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 35px;
+						line-height: 43px;
+						text-transform: uppercase;
+						color: #7449d0;
+					}
+				}
+
+				.features_slider {
+					.slider_item {
+						.box_list {
+							list-style: none;
+							display: flex;
+							flex-wrap: wrap;
+							margin-bottom: 45px;
+
+							.list_item {
+								display: flex;
+								align-items: center;
+								width: 48%;
+								margin-bottom: 35px;
+
+								.item_icon {
+									background: linear-gradient(90deg, #7449d0 0%, #7449d0 100%);
+									border-radius: 50%;
+									width: 20px;
+									height: 20px;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									margin-right: 20px;
+									color: #fff;
+								}
+
+								.item_text {
+									font-family: $main_font;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 171.5%;
+									color: #000000;
+								}
+							}
+						}
+					}
+				}
+				.slider_arrows {
+					position: absolute;
+					top: 0;
+					right: 0;
+					display: flex;
+					align-items: center;
+					background: #ffffff;
+					border-radius: 50px;
+
+					.arrow_prev,
+					.arrow_next {
+						width: 68px;
+						height: 40px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+
+						span {
+							padding-top: 20px;
+						}
+
+						span::before {
+							font-size: 25px;
+							line-height: 0;
+							padding-top: 10px;
+						}
+					}
+
+					.arrow_prev {
+						border-radius: 20px 0 0 20px;
+						background: #9d72f8;
+						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					}
+					.arrow_next {
+						border-radius: 0 20px 20px 0;
+						background: #7449d0;
+						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+					}
+				}
+			}
+
+			.icons {
+				height: auto;
+				margin-bottom: 45px;
+				&_block {
+					position: relative;
+					height: auto;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					.block {
+						display: flex;
+						width: 32%;
+						&_img {
+							margin-right: 15px;
+						}
+
+						&_text {
+							h3 {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 16px;
+								line-height: 150%;
+								text-transform: uppercase;
+								margin-bottom: 10px;
+							}
+
+							p {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 14px;
+								line-height: 17px;
+								color: #000000;
+							}
+						}
+					}
+				}
+			}
+
+			.price_table {
+				.price_list {
+					list-style: none;
+					height: auto;
+					position: relative;
+					width: 100%;
+					margin-bottom: 40px;
+
+					.list_head,
+					.list_item {
+						display: flex;
+						align-items: center;
+						padding-left: 35px;
+
+						.left {
+							width: 70%;
+						}
+
+						.right {
+							width: 30%;
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+
+							.action {
+								width: 50%;
+								text-align: center;
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 14px;
+								line-height: 59%;
+								text-transform: uppercase;
+								color: #d04949;
+							}
+
+							.price {
+								width: 50%;
+								text-align: center;
+							}
+						}
+					}
+
+					.list_head {
+						margin-bottom: 20px;
+						.left {
+							p {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 14px;
+								line-height: 150%;
+								text-transform: uppercase;
+								color: #000000;
+							}
+						}
+
+						.right {
+							.price {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 14px;
+								line-height: 150%;
+								text-transform: uppercase;
+								color: #000000;
+							}
+						}
+					}
+
+					.list_item {
+						padding: 9px 0 0 35px;
+						.left {
+							p {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 16px;
+								line-height: 150%;
+								color: #000000;
+							}
+						}
+
+						.right {
+							.action {
+								font-size: 24px;
+							}
+
+							.price {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 24px;
+								line-height: 150.5%;
+								color: #7449d0;
+							}
+						}
+
+						&:nth-child(even) {
+							background-color: #eff9ef;
+						}
+					}
+				}
+			}
+
+			.section_one-blocks .block_left-content .content_title {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 27px;
+				text-transform: uppercase;
+				color: #000000;
+			}
+
+			.section_one-blocks .block_left-img {
+				width: 54%;
+				height: 100%;
+				border-radius: 30px 0 0 30px;
+				background: url(../img/plazma/section_one-img.png), no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+
+			.methods {
+				.methods_block {
+					height: auto;
+					position: relative;
+					display: flex;
+					flex-wrap: wrap;
+					margin-bottom: 25px;
+
+					.block {
+						width: 31%;
+						display: flex;
+						align-items: center;
+						margin-right: 20px;
+						margin-bottom: 25px;
+
+						.block_img {
+							margin-right: 20px;
+						}
+
+						.block_text {
+							h3 {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: bold;
+								font-size: 18px;
+								line-height: 150%;
+								color: #000000;
+							}
+						}
+					}
+				}
+			}
+
+			.section_three-blocks {
+				.block_right {
+					position: relative;
+					display: flex;
+					align-items: center;
+					background: #ffffff;
+					box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+					border-radius: 30px;
+					border: 1px solid #7449d0;
+					padding: 0 0px 30px 30px;
+
+					.table_content {
+						position: absolute;
+						display: none;
+						top: 15px;
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: 600;
+						font-size: 16px;
+						line-height: 120%;
+						color: #000000;
+					}
+
+					.content {
+						width: 60%;
+
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+
+							&:first-child {
+								font-weight: 600;
+							}
+						}
+
+						h3 {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 35px;
+							line-height: 43px;
+							text-transform: uppercase;
+							color: #472297;
+							margin: 15px 0;
+						}
+					}
+
+					.doctor_info {
+						width: 40%;
+
+						img {
+							width: 100%;
+							margin-bottom: 25px;
+						}
+
+						.name {
+							width: 70%;
+							margin: 0 auto;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 18px;
+							line-height: 120%;
+							text-align: center;
+							color: #000000;
+							margin-bottom: 7px;
+						}
+
+						.job {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 13px;
+							line-height: 16px;
+							text-align: center;
+							color: #7449d0;
+						}
+					}
+				}
+			}
+		}
+
+		// SECTON - TWO - END
+
+		.section_four {
+			.container {
+				padding: 0;
+			}
+		}
+	}
 }

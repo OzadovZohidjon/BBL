@@ -548,19 +548,9 @@ $primary_font: "Corinthia", sans-serif;
 			margin-right: 20px;
 		}
 
-		.header_buttons {
-			a.btn_circle {
-				width: 44px;
-				height: 44px;
-				margin-right: 20px;
-			}
-
-			.btn {
-				height: 52px;
-				.btn_circle {
-					width: 44px;
-					height: 44px;
-				}
+		.header_menu {
+			.menu_item {
+				margin-right: 0px;
 			}
 		}
 

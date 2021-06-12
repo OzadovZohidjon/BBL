@@ -513,19 +513,11 @@ $primary_font: "Corinthia", sans-serif;
 			}
 		}
 
-		.header_about {
-			margin-right: 20px;
+		.header_menu {
+			.menu_item {
+				margin-right: 0px;
+			}
 		}
-
-		.header_menu .menu_item {
-			margin-right: 15px;
-		}
-
-		.btn_purple {
-			margin-right: 10px * 2;
-			color: #fff;
-		}
-
 		// HEADER - END
 
 		// SECTION - ONE - START
