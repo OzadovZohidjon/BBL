@@ -47,7 +47,7 @@ $primary_font: "Corinthia", sans-serif;
 		&-blocks {
 			.block_left {
 				&-img {
-					background-image: url(../../img/lips/section_one-img.png);
+					background-image: url(../img/lips/section_one-img.png);
 				}
 
 				&-content {
@@ -107,6 +107,13 @@ $primary_font: "Corinthia", sans-serif;
 	// SECTION - TWO - START
 
 	.section_two {
+		position: relative;
+		height: auto;
+		background: url(../img/bg.png);
+		background-position: 0px -200px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		overflow: hidden;
 		&-title {
 			width: 40%;
 		}
@@ -332,6 +339,7 @@ $primary_font: "Corinthia", sans-serif;
 	// SECTION - THREE - START
 
 	.section_three {
+		background: unset;
 		&-img_boxes {
 			position: relative;
 			width: 100%;
@@ -457,6 +465,18 @@ $primary_font: "Corinthia", sans-serif;
 						color: #7449d0;
 					}
 				}
+			}
+		}
+
+		.section_three-stages {
+			.box:nth-child(8)::before,
+			.box:nth-child(8)::after {
+				display: unset;
+			}
+
+			.box:nth-child(11)::before,
+			.box:nth-child(11)::after {
+				display: none;
 			}
 		}
 	}
@@ -795,6 +815,7 @@ $primary_font: "Corinthia", sans-serif;
 		}
 
 		.section_two {
+			background: unset;
 			&-title {
 				width: 100%;
 			}
@@ -1059,6 +1080,18 @@ $primary_font: "Corinthia", sans-serif;
 							margin: 0 auto 25px 50px;
 						}
 					}
+				}
+			}
+
+			.section_three-stages {
+				.box:nth-child(8)::before,
+				.box:nth-child(8)::after {
+					display: none;
+				}
+
+				.box:nth-child(11)::before,
+				.box:nth-child(11)::after {
+					display: none;
 				}
 			}
 		}

@@ -88,7 +88,7 @@ $primary_font: "Corinthia", sans-serif;
 						.item_text {
 							font-family: $main_font;
 							font-style: normal;
-							font-weight: normal;
+							font-weight: bold;
 							font-size: 16px;
 							line-height: 100%;
 							color: #000000;
@@ -109,6 +109,29 @@ $primary_font: "Corinthia", sans-serif;
 	.section_two {
 		&-title {
 			width: 100%;
+
+			.subtitle {
+				font-family: $main_font;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 16px;
+				line-height: 150%;
+				color: #000000;
+				margin-top: 20px;
+			}
+		}
+
+		.section_accardion .accardion_item:first-child {
+			position: relative;
+			height: auto;
+			background: url(../img/bg.png);
+			background-position: -100px 400px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			overflow: hidden;
+			.item_body-title {
+				margin-bottom: 60px;
+			}
 		}
 
 		.section_four-slider .slider_item .item_text p {
@@ -233,6 +256,10 @@ $primary_font: "Corinthia", sans-serif;
 			}
 		}
 
+		.mobile_block {
+			display: none;
+		}
+
 		.features_block {
 			position: relative;
 			height: auto;
@@ -260,12 +287,16 @@ $primary_font: "Corinthia", sans-serif;
 						margin-bottom: 45px;
 
 						.list_item {
+							position: relative;
 							display: flex;
 							align-items: center;
 							width: 48%;
 							margin-bottom: 35px;
+							padding-left: 40px;
 
 							.item_icon {
+								position: absolute;
+								left: 0;
 								background: linear-gradient(90deg, #7449d0 0%, #7449d0 100%);
 								border-radius: 50%;
 								width: 20px;
@@ -648,6 +679,66 @@ $primary_font: "Corinthia", sans-serif;
 		.plazma .section_one .title_blocks .block_right {
 			width: 67%;
 		}
+
+		.section_two {
+			.section_three-blocks {
+				.block_left {
+					height: 320px;
+					video[poster] {
+						object-fit: none;
+					}
+				}
+				.block_right {
+					height: 320px;
+					display: flex;
+					align-items: center;
+					background: #ffffff;
+					box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+					border-radius: 30px;
+					border: 1px solid #7449d0;
+					padding: 120px 0px 30px 30px;
+
+					.table_content {
+						display: block;
+					}
+
+					.content {
+						width: 60%;
+
+						p {
+							line-height: 120%;
+							&:first-child {
+								display: none;
+							}
+						}
+
+						h3 {
+							font-size: 25px;
+							line-height: 30px;
+							margin: 10px 0 0 0;
+						}
+					}
+
+					.doctor_info {
+						width: 40%;
+
+						img {
+							width: 100%;
+							margin-bottom: 0px;
+						}
+
+						.name {
+							width: 100%;
+							font-size: 14px;
+						}
+
+						.job {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	@media only screen and (max-width: 667.9px) {
@@ -684,6 +775,11 @@ $primary_font: "Corinthia", sans-serif;
 		}
 
 		// SECTION - ONE - START
+
+		.section_two .section_accardion .accardion_item .item_head_text,
+		.section_two .section_accardion .accardion_item:last-child .item_head_text {
+			width: 80%;
+		}
 
 		.section_one {
 			.container {
@@ -737,52 +833,37 @@ $primary_font: "Corinthia", sans-serif;
 				width: 100%;
 			}
 
-			.section_four-slider .slider_item .item_text p {
-				font-family: $main_font;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 16px;
-				line-height: 150%;
-				text-align: center;
-				text-transform: uppercase;
-				color: #000000;
+			.section_four-slider {
+				padding: 0 15px;
 
-				span {
-					font-weight: normal;
-					text-transform: initial;
+				.slider_item {
+					padding-bottom: 60px;
+				}
+			}
+
+			.section_accardion {
+				.accardion_item:first-child {
+					.item_body-title {
+						display: none;
+					}
 				}
 			}
 
 			.advantages_block {
-				position: relative;
-				height: auto;
-
-				.block_title {
-					width: 80%;
-					margin-bottom: 40px;
-					h1 {
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 35px;
-						line-height: 43px;
-						text-transform: uppercase;
-						color: #7449d0;
-					}
-				}
-
 				.advantages_slider {
+					padding: 0 15px;
 					.slider_item {
 						display: flex;
 						justify-content: space-between;
+						flex-direction: column;
 						margin-bottom: 30px;
 
 						.box_left {
-							width: 48%;
+							width: 100%;
 						}
 
 						.box_right {
-							width: 48%;
+							width: 100%;
 						}
 
 						.box_item {
@@ -818,142 +899,73 @@ $primary_font: "Corinthia", sans-serif;
 					}
 				}
 				.slider_arrows {
+					display: none;
+				}
+			}
+
+			.mobile_block {
+				display: block;
+				width: 100%;
+				background: linear-gradient(90deg, #8e67e1 0%, #a58af1 100%);
+				box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+				padding: 20px;
+				margin: 35px 0;
+				position: relative;
+
+				.right_img {
 					position: absolute;
-					top: 0;
+					bottom: 0;
 					right: 0;
-					display: flex;
-					align-items: center;
-					background: #ffffff;
-					border-radius: 50px;
+					width: 100%;
+					height: 100%;
+					background: url(../img/inyeksiya/section_one-img.png);
+					background-size: contain;
+					background-position: 140px 80px;
+					background-repeat: no-repeat;
+					z-index: 1;
+				}
 
-					.arrow_prev,
-					.arrow_next {
-						width: 68px;
-						height: 40px;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						cursor: pointer;
+				h3 {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: bold;
+					font-size: 24px;
+					line-height: 36px;
+					letter-spacing: 0.005em;
+					color: #ffffff;
+					margin-bottom: 22px;
+					z-index: 2;
+				}
 
-						span {
-							padding-top: 20px;
-						}
-
-						span::before {
-							font-size: 25px;
-							line-height: 0;
-							padding-top: 10px;
-						}
-					}
-
-					.arrow_prev {
-						border-radius: 20px 0 0 20px;
-						background: #9d72f8;
-						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-					}
-					.arrow_next {
-						border-radius: 0 20px 20px 0;
-						background: #7449d0;
-						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-					}
+				p {
+					position: relative;
+					font-family: $main_font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 18px;
+					line-height: 150%;
+					color: #ffffff;
+					z-index: 2;
 				}
 			}
 
 			.features_block {
-				position: relative;
-				height: auto;
-
-				.block_title {
-					width: 80%;
-					margin-bottom: 40px;
-					h1 {
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 35px;
-						line-height: 43px;
-						text-transform: uppercase;
-						color: #7449d0;
-					}
-				}
-
 				.features_slider {
+					padding: 0 15px;
 					.slider_item {
 						.box_list {
-							list-style: none;
-							display: flex;
-							flex-wrap: wrap;
+							flex-direction: column;
 							margin-bottom: 45px;
 
 							.list_item {
-								display: flex;
-								align-items: center;
-								width: 48%;
-								margin-bottom: 35px;
-
-								.item_icon {
-									background: linear-gradient(90deg, #7449d0 0%, #7449d0 100%);
-									border-radius: 50%;
-									width: 20px;
-									height: 20px;
-									display: flex;
-									align-items: center;
-									justify-content: center;
-									margin-right: 20px;
-									color: #fff;
-								}
-
-								.item_text {
-									font-family: $main_font;
-									font-style: normal;
-									font-weight: normal;
-									font-size: 16px;
-									line-height: 171.5%;
-									color: #000000;
-								}
+								width: 100%;
 							}
 						}
 					}
 				}
 				.slider_arrows {
-					position: absolute;
-					top: 0;
-					right: 0;
-					display: flex;
-					align-items: center;
-					background: #ffffff;
-					border-radius: 50px;
-
-					.arrow_prev,
-					.arrow_next {
-						width: 68px;
-						height: 40px;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						cursor: pointer;
-
-						span {
-							padding-top: 20px;
-						}
-
-						span::before {
-							font-size: 25px;
-							line-height: 0;
-							padding-top: 10px;
-						}
-					}
-
-					.arrow_prev {
-						border-radius: 20px 0 0 20px;
-						background: #9d72f8;
-						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-					}
-					.arrow_next {
-						border-radius: 0 20px 20px 0;
-						background: #7449d0;
-						filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-					}
+					display: none;
 				}
 			}
 
@@ -961,37 +973,14 @@ $primary_font: "Corinthia", sans-serif;
 				height: auto;
 				margin-bottom: 45px;
 				&_block {
-					position: relative;
-					height: auto;
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-between;
+					flex-direction: column;
+					padding: 0 15px;
 					.block {
 						display: flex;
-						width: 32%;
+						width: 100%;
+						margin-bottom: 15px;
 						&_img {
 							margin-right: 15px;
-						}
-
-						&_text {
-							h3 {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
-								font-size: 16px;
-								line-height: 150%;
-								text-transform: uppercase;
-								margin-bottom: 10px;
-							}
-
-							p {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: normal;
-								font-size: 14px;
-								line-height: 17px;
-								color: #000000;
-							}
 						}
 					}
 				}
@@ -999,10 +988,6 @@ $primary_font: "Corinthia", sans-serif;
 
 			.price_table {
 				.price_list {
-					list-style: none;
-					height: auto;
-					position: relative;
-					width: 100%;
 					margin-bottom: 40px;
 
 					.list_head,
@@ -1019,18 +1004,13 @@ $primary_font: "Corinthia", sans-serif;
 							width: 30%;
 							display: flex;
 							align-items: center;
-							justify-content: space-between;
+							flex-direction: column-reverse;
+							justify-content: flex-end;
 
 							.action {
+								align-self: flex-end;
 								width: 50%;
-								text-align: center;
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
 								font-size: 14px;
-								line-height: 59%;
-								text-transform: uppercase;
-								color: #d04949;
 							}
 
 							.price {
@@ -1041,152 +1021,87 @@ $primary_font: "Corinthia", sans-serif;
 					}
 
 					.list_head {
-						margin-bottom: 20px;
-						.left {
-							p {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
-								font-size: 14px;
-								line-height: 150%;
-								text-transform: uppercase;
-								color: #000000;
-							}
-						}
-
-						.right {
-							.price {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
-								font-size: 14px;
-								line-height: 150%;
-								text-transform: uppercase;
-								color: #000000;
-							}
-						}
+						display: none;
 					}
 
 					.list_item {
-						padding: 9px 0 0 35px;
+						padding: 10px 15px 10px 15px;
 						.left {
 							p {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: normal;
-								font-size: 16px;
-								line-height: 150%;
-								color: #000000;
+								font-size: 14px;
+								line-height: 120%;
 							}
 						}
 
 						.right {
 							.action {
-								font-size: 24px;
+								font-size: 18px;
 							}
 
 							.price {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
 								font-size: 24px;
 								line-height: 150.5%;
-								color: #7449d0;
 							}
-						}
-
-						&:nth-child(even) {
-							background-color: #eff9ef;
 						}
 					}
 				}
 			}
 
-			.section_one-blocks .block_left-content .content_title {
-				font-family: $main_font;
-				font-style: normal;
-				font-weight: 600;
-				font-size: 16px;
-				line-height: 27px;
-				text-transform: uppercase;
-				color: #000000;
-			}
+			.section_one-blocks {
+				.block_left-img {
+					width: 100%;
+					height: 333px;
+					border-radius: 30px 30px 30px 30px;
+					background: url(../img/plazma/section_one-img.png), no-repeat;
+					background-size: cover;
+					background-position: center;
+				}
 
-			.section_one-blocks .block_left-img {
-				width: 54%;
-				height: 100%;
-				border-radius: 30px 0 0 30px;
-				background: url(../img/plazma/section_one-img.png), no-repeat;
-				background-size: cover;
-				background-position: center;
+				.block_right {
+					display: none;
+				}
 			}
 
 			.methods {
 				.methods_block {
-					height: auto;
-					position: relative;
-					display: flex;
-					flex-wrap: wrap;
+					flex-direction: column;
 					margin-bottom: 25px;
+					padding: 0 15px;
 
 					.block {
-						width: 31%;
-						display: flex;
-						align-items: center;
-						margin-right: 20px;
-						margin-bottom: 25px;
-
-						.block_img {
-							margin-right: 20px;
-						}
-
-						.block_text {
-							h3 {
-								font-family: $main_font;
-								font-style: normal;
-								font-weight: bold;
-								font-size: 18px;
-								line-height: 150%;
-								color: #000000;
-							}
-						}
+						width: 100%;
 					}
 				}
 			}
 
+			.section_three-stages,
+			.section_three-slider,
+			.section_six-blocks {
+				padding: 0 15px;
+			}
+
 			.section_three-blocks {
+				padding: 0 15px;
+
+				.block_left {
+					margin-bottom: 20px;
+				}
+
 				.block_right {
 					position: relative;
-					display: flex;
-					align-items: center;
-					background: #ffffff;
-					box-shadow: 0px 30px 30px -20px rgba(0, 0, 0, 0.15);
+					flex-direction: column;
+					box-shadow: none;
+					height: auto;
 					border-radius: 30px;
-					border: 1px solid #7449d0;
-					padding: 0 0px 30px 30px;
-
-					.table_content {
-						position: absolute;
-						display: none;
-						top: 15px;
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: 600;
-						font-size: 16px;
-						line-height: 120%;
-						color: #000000;
-					}
+					border: none;
+					padding: 0;
 
 					.content {
-						width: 60%;
+						width: 100%;
 
 						p {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: normal;
 							font-size: 16px;
-							line-height: 150%;
-							color: #000000;
+							line-height: 120%;
 
 							&:first-child {
 								font-weight: 600;
@@ -1194,46 +1109,18 @@ $primary_font: "Corinthia", sans-serif;
 						}
 
 						h3 {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: normal;
-							font-size: 35px;
-							line-height: 43px;
-							text-transform: uppercase;
-							color: #472297;
-							margin: 15px 0;
+							font-size: 25px;
+							line-height: 30px;
+							text-align: center;
 						}
 					}
 
 					.doctor_info {
-						width: 40%;
+						width: 100%;
 
 						img {
-							width: 100%;
-							margin-bottom: 25px;
-						}
-
-						.name {
 							width: 70%;
-							margin: 0 auto;
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: bold;
-							font-size: 18px;
-							line-height: 120%;
-							text-align: center;
-							color: #000000;
-							margin-bottom: 7px;
-						}
-
-						.job {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: normal;
-							font-size: 13px;
-							line-height: 16px;
-							text-align: center;
-							color: #7449d0;
+							margin: 0 auto 25px 50px;
 						}
 					}
 				}

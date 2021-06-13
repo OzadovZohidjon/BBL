@@ -263,6 +263,28 @@ $('.img_slider').slick({
     nextArrow: $('.images_slider-next')
 });
 
+$('.advantages_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.advantages_slider-arrow-prev'),
+    nextArrow: $('.advantages_slider-arrow-next'),
+    responsive: [
+        {
+            breakpoint: 760,
+            settings: "unslick"
+        }
+    ]
+});
+
+$('.features_sliderr').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.features_sliderr-arrow-prev'),
+    nextArrow: $('.features_sliderr-arrow-next')
+});
+
 
 // Modals Start
 

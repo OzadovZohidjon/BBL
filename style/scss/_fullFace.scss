@@ -537,6 +537,18 @@ $primary_font: "Corinthia", sans-serif;
 		.section_four-cart {
 			margin-bottom: 40px;
 		}
+
+		.section_three-stages {
+			.box:nth-child(8)::before,
+			.box:nth-child(8)::after {
+				display: unset;
+			}
+
+			.box:nth-child(10)::before,
+			.box:nth-child(10)::after {
+				display: none;
+			}
+		}
 	}
 
 	.section_six-title {
@@ -973,6 +985,18 @@ $primary_font: "Corinthia", sans-serif;
 
 			.section_four-cart {
 				margin-bottom: 40px;
+			}
+
+			.section_three-stages {
+				.box:nth-child(8)::before,
+				.box:nth-child(8)::after {
+					display: none;
+				}
+
+				.box:nth-child(10)::before,
+				.box:nth-child(10)::after {
+					display: none;
+				}
 			}
 		}
 
