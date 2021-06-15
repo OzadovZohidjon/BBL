@@ -555,6 +555,17 @@ $primary_font: "Corinthia", sans-serif;
 		width: 65%;
 	}
 
+	@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+		.header_menu .menu_item {
+			margin-right: 15px;
+			padding: 0;
+		}
+
+		.header_about {
+			margin-right: 15px;
+		}
+	}
+
 	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
 		.header_about {
 			margin-right: 20px;
@@ -721,6 +732,9 @@ $primary_font: "Corinthia", sans-serif;
 
 		.header_menu .menu_item {
 			margin-right: 0;
+			&:nth-child(4) {
+				display: none;
+			}
 		}
 
 		.section_one-content .content_texts {

@@ -186,9 +186,8 @@ $primary_font: "Corinthia", sans-serif;
 							font-family: $main_font;
 							font-style: normal;
 							font-weight: normal;
-							font-size: 14px;
+							font-size: 16px;
 							line-height: 171.5%;
-							text-transform: uppercase;
 							color: #000000;
 						}
 					}
@@ -333,7 +332,22 @@ $primary_font: "Corinthia", sans-serif;
 		width: 65%;
 	}
 
-	@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+	@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+		.header_menu .menu_item {
+			margin-right: 15px;
+			padding: 0;
+		}
+
+		.header_about {
+			margin-right: 15px;
+		}
+
+		.section_four-cart .cart_right {
+			background-position: 90px 0px;
+		}
+		.vjs-poster {
+			background-size: cover;
+		}
 	}
 
 	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
@@ -427,6 +441,16 @@ $primary_font: "Corinthia", sans-serif;
 		.section_three-stages .section_three-boxes .box {
 			height: 470px;
 		}
+
+		.section_four {
+			.section_four-title {
+				width: 70%;
+
+				h1 {
+					font-size: 35px;
+				}
+			}
+		}
 	}
 
 	@media only screen and (width: 768px) {
@@ -455,6 +479,9 @@ $primary_font: "Corinthia", sans-serif;
 
 		.header_menu .menu_item {
 			margin-right: 0;
+			&:nth-child(4) {
+				display: none;
+			}
 		}
 
 		.section_one_blocks {

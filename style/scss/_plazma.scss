@@ -658,6 +658,34 @@ $primary_font: "Corinthia", sans-serif;
 		}
 	}
 
+	@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
+		.header_menu .menu_item {
+			margin-right: 15px;
+			padding: 0;
+		}
+
+		.header_about {
+			margin-right: 15px;
+		}
+
+		.section_four-cart .cart_right {
+			background-position: 90px 0px;
+		}
+
+		.section_one-blocks .block_right .btn {
+			width: 90%;
+			font-size: 12px;
+		}
+
+		.section_one-blocks .block_right .block_title {
+			font-size: 19px;
+		}
+
+		.vjs-poster {
+			background-size: cover;
+		}
+	}
+
 	@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
 		.header_main.plazma_header-main {
 			.slider_item {
@@ -756,6 +784,10 @@ $primary_font: "Corinthia", sans-serif;
 		.header_menu {
 			.menu_item {
 				margin-right: 0px;
+
+				&:nth-child(4) {
+					display: none;
+				}
 			}
 		}
 
@@ -1009,7 +1041,7 @@ $primary_font: "Corinthia", sans-serif;
 
 							.action {
 								align-self: flex-end;
-								width: 50%;
+								width: 100%;
 								font-size: 14px;
 							}
 

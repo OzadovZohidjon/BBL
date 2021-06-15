@@ -768,6 +768,9 @@ $primary_font: "Corinthia", sans-serif;
 	@media only screen and (max-width: 667.9px) {
 		.header_menu .menu_item {
 			margin-right: 0;
+			&:nth-child(4) {
+				display: none;
+			}
 		}
 
 		.header_main.lips_header-main {
