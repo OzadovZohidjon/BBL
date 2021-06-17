@@ -613,11 +613,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 50px 15px 10px 15px;
+    padding: 50px 15px 25px 15px;
   }
   .inyeksiya .header_main.inyeksiya_header-main .slider_item h1 {
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .inyeksiya .header_menu .menu_item {
     margin-right: 0;
@@ -4333,8 +4333,8 @@ html {
 }
 
 .btn.purple:hover {
-  -webkit-box-shadow: 0 4px 20px #472297;
-          box-shadow: 0 4px 20px #472297;
+  -webkit-box-shadow: 0 4px 20px rgba(71, 34, 151, 0.45);
+          box-shadow: 0 4px 20px rgba(71, 34, 151, 0.45);
 }
 
 .btn_circle {
