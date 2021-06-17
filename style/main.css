@@ -306,30 +306,78 @@
 	color: #000000;
 }
 
-.inyeksiya .section_two .price_table {
+.inyeksiya .section_two .price_table .price_list {
+	list-style: none;
+	height: auto;
+	position: relative;
 	width: 100%;
 	margin-bottom: 40px;
 }
 
-.inyeksiya .section_two .price_table .price_list {
-	width: 100%;
-}
-
-.inyeksiya .section_two .price_table .price_list .list_head {
-	width: 100%;
+.inyeksiya .section_two .price_table .price_list .list_head,
+.inyeksiya .section_two .price_table .price_list .list_item {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 4px 30px;
+	padding-left: 35px;
 }
 
-.inyeksiya .section_two .price_table .price_list .list_head p {
+.inyeksiya .section_two .price_table .price_list .list_head .left,
+.inyeksiya .section_two .price_table .price_list .list_item .left {
+	width: 70%;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head .right,
+.inyeksiya .section_two .price_table .price_list .list_item .right {
+	width: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head .right .action,
+.inyeksiya .section_two .price_table .price_list .list_item .right .action {
+	width: 50%;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 59%;
+	text-transform: uppercase;
+	color: #d04949;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head .right .price,
+.inyeksiya .section_two .price_table .price_list .list_item .right .price {
+	width: 50%;
+	text-align: center;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head {
+	margin-bottom: 20px;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head .left p {
+	font-family: "Montserrat", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_head .right .price {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -340,20 +388,10 @@
 }
 
 .inyeksiya .section_two .price_table .price_list .list_item {
-	width: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 4px 30px;
+	padding: 9px 0 0 35px;
 }
 
-.inyeksiya .section_two .price_table .price_list .list_item .item_text {
+.inyeksiya .section_two .price_table .price_list .list_item .left p {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -362,7 +400,11 @@
 	color: #000000;
 }
 
-.inyeksiya .section_two .price_table .price_list .list_item .item_price-number {
+.inyeksiya .section_two .price_table .price_list .list_item .right .action {
+	font-size: 24px;
+}
+
+.inyeksiya .section_two .price_table .price_list .list_item .right .price {
 	font-family: "Montserrat", sans-serif;
 	font-style: normal;
 	font-weight: bold;
@@ -372,7 +414,7 @@
 }
 
 .inyeksiya .section_two .price_table .price_list .list_item:nth-child(even) {
-	background: #eff9ef;
+	background-color: #eff9ef;
 }
 
 .inyeksiya .section_three {
@@ -466,6 +508,10 @@
 	width: 65%;
 }
 
+.inyeksiya .section_four-cart .cart_right {
+	background-position: 180px 0px;
+}
+
 @media only screen and (min-width: 1199.98px) and (max-width: 1400px) {
 	.inyeksiya .header_menu .menu_item {
 		margin-right: 15px;
@@ -492,6 +538,10 @@
 @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
 	.inyeksiya .header_menu .menu_item {
 		margin-right: 0;
+	}
+	.inyeksiya .section_three-blocks .block_left video[poster] {
+		-o-object-fit: none;
+		object-fit: none;
 	}
 	.inyeksiya .section_one_blocks .block_one {
 		margin-bottom: 60px;
@@ -609,6 +659,9 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+	}
+	.inyeksiya .header_main.inyeksiya_header-main .slider_item h1 {
+		width: 50%;
 	}
 	.inyeksiya .header_menu .menu_item {
 		margin-right: 0;
@@ -795,71 +848,68 @@
 		p {
 		display: none;
 	}
-	.inyeksiya .section_two .price_table {
-		width: 100%;
+	.inyeksiya .section_two .price_table .price_list {
 		margin-bottom: 40px;
 	}
-	.inyeksiya .section_two .price_table .price_list {
+	.inyeksiya .section_two .price_table .price_list .list_head,
+	.inyeksiya .section_two .price_table .price_list .list_item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-left: 35px;
+	}
+	.inyeksiya .section_two .price_table .price_list .list_head .left,
+	.inyeksiya .section_two .price_table .price_list .list_item .left {
+		width: 70%;
+	}
+	.inyeksiya .section_two .price_table .price_list .list_head .right,
+	.inyeksiya .section_two .price_table .price_list .list_item .right {
+		width: 30%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+	}
+	.inyeksiya .section_two .price_table .price_list .list_head .right .action,
+	.inyeksiya .section_two .price_table .price_list .list_item .right .action {
+		-ms-flex-item-align: end;
+		align-self: flex-end;
 		width: 100%;
+		font-size: 14px;
+	}
+	.inyeksiya .section_two .price_table .price_list .list_head .right .price,
+	.inyeksiya .section_two .price_table .price_list .list_item .right .price {
+		width: 100%;
+		text-align: center;
 	}
 	.inyeksiya .section_two .price_table .price_list .list_head {
-		width: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		padding: 4px 30px;
-	}
-	.inyeksiya .section_two .price_table .price_list .list_head p {
-		font-family: "Montserrat", sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 14px;
-		line-height: 150%;
-		text-transform: uppercase;
-		color: #000000;
+		display: none;
 	}
 	.inyeksiya .section_two .price_table .price_list .list_item {
-		width: 100%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		padding: 4px 30px;
+		padding: 10px 15px 10px 15px;
 	}
-	.inyeksiya .section_two .price_table .price_list .list_item .item_text {
-		font-family: "Montserrat", sans-serif;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 150%;
-		color: #000000;
+	.inyeksiya .section_two .price_table .price_list .list_item .left p {
+		font-size: 14px;
+		line-height: 120%;
 	}
-	.inyeksiya
-		.section_two
-		.price_table
-		.price_list
-		.list_item
-		.item_price-number {
-		font-family: "Montserrat", sans-serif;
-		font-style: normal;
-		font-weight: bold;
+	.inyeksiya .section_two .price_table .price_list .list_item .right .action {
+		font-size: 18px;
+	}
+	.inyeksiya .section_two .price_table .price_list .list_item .right .price {
 		font-size: 24px;
 		line-height: 150.5%;
-		color: #7449d0;
-	}
-	.inyeksiya .section_two .price_table .price_list .list_item:nth-child(even) {
-		background: #eff9ef;
 	}
 	.inyeksiya .section_three {
 		padding-bottom: 40px;
@@ -4594,6 +4644,21 @@ html {
 	visibility: hidden;
 }
 
+.btn:hover .btn_circle {
+	-webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn:hover {
+	-webkit-box-shadow: 0 0 10px #1b9820;
+	box-shadow: 0 0 10px #1b9820;
+}
+
+.btn.purple:hover {
+	-webkit-box-shadow: 0 4px 20px #472297;
+	box-shadow: 0 4px 20px rgb(71 34 151 / 45%);
+}
+
 .btn_circle {
 	position: relative;
 	width: 38px;
@@ -4649,43 +4714,21 @@ html {
 }
 
 .btn .btn_circle {
-	-webkit-transition: all 1.5s ease;
-	transition: all 1.5s ease;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
-.btn_purple {
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(#a68fe2),
-		to(#7449d0)
-	);
-	background: linear-gradient(90deg, #a68fe2 0%, #7449d0 100%);
-	-webkit-box-shadow: 0px 4px 20px rgba(82, 96, 217, 0.45);
-	box-shadow: 0px 4px 20px rgba(82, 96, 217, 0.45);
-	border-radius: 61px;
-	color: #fff;
-	padding: 0px 25px 0px 0px;
-	height: 38px !important;
+.btn:focus {
+	padding: 5px 10px 5px 10px;
 }
 
-.btn_purple .btn_circle {
-	left: 1px;
-}
-
-.btn:hover .btn_circle {
+.btn:focus .btn_circle {
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 2;
+	order: 2;
+	margin-left: 15px;
 	-webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
 	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-}
-
-.btn:hover {
-	-webkit-box-shadow: 0 0 10px #1b9820;
-	box-shadow: 0 0 10px #1b9820;
-}
-
-.btn.purple:hover {
-	box-shadow: 0 4px 20px rgb(71 34 151 / 45%);
 }
 
 .my-video-dimensions {
@@ -10369,6 +10412,7 @@ video {
 		flex-direction: row-reverse;
 		-ms-flex-pack: distribute;
 		justify-content: space-around;
+		padding: 15px 0;
 	}
 	.header_menu .menu_item {
 		position: relative;

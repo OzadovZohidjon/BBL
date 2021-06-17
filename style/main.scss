@@ -75,51 +75,56 @@ html {
 	visibility: hidden;
 }
 
-
 .btn:hover .btn_circle {
-	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
-  }
-  .btn:hover {
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
+.btn:hover {
 	box-shadow: 0 0 10px #1b9820;
-  }
-  .btn.purple:hover{
-	box-shadow: 0 4px 20px rgb(71 34 151 / 45%);
-  }
-  
-  .btn_circle {
+}
+.btn.purple:hover {
+	box-shadow: 0 4px 20px rgba(71, 34, 151, 45%);
+}
+
+.btn_circle {
 	position: relative;
 	width: 38px;
 	height: 38px;
 	padding: 10px;
 	border-radius: 50%;
 	color: #fff;
-	background: -webkit-gradient(linear, left top, right top, from(#a38be2), to(#7449d0));
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#a38be2),
+		to(#7449d0)
+	);
 	background: linear-gradient(90deg, #a38be2 0%, #7449d0 100%);
 	-webkit-box-shadow: 0px 2px 8px rgba(71, 34, 151, 0.45);
-			box-shadow: 0px 2px 8px rgba(71, 34, 151, 0.45);
+	box-shadow: 0px 2px 8px rgba(71, 34, 151, 0.45);
 	margin-right: 15px;
 	text-decoration: none;
-  }
-  
-  .btn_circle ion-icon,
-  .btn_circle img {
+}
+
+.btn_circle ion-icon,
+.btn_circle img {
 	font-size: 22px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-  }
-  
-  .btn {
+	transform: translate(-50%, -50%);
+}
+
+.btn {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-		-ms-flex-align: center;
-			align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-shadow: 0px 2px 15px #dfdfdf;
-			box-shadow: 0px 2px 15px #dfdfdf;
+	box-shadow: 0px 2px 15px #dfdfdf;
 	border-radius: 61px;
 	padding: 5px 25px 5px 5px;
 	font-family: "Montserrat", sans-serif;
@@ -132,24 +137,24 @@ html {
 	text-decoration: none;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-  }
-  
-  .btn .btn_circle {
+}
+
+.btn .btn_circle {
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
-  }
-  
-  .btn:focus {
+}
+
+.btn:focus {
 	padding: 5px 10px 5px 10px;
-  }
-  
-  .btn:focus .btn_circle {
+}
+
+.btn:focus .btn_circle {
 	-webkit-box-ordinal-group: 3;
-		-ms-flex-order: 2;
-			order: 2;
+	-ms-flex-order: 2;
+	order: 2;
 	margin-left: 15px;
-	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)!important;
-  }
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
 
 .my-video-dimensions {
 	width: 100%;
@@ -5844,6 +5849,7 @@ video {
 				display: flex;
 				flex-direction: row-reverse;
 				justify-content: space-around;
+				padding: 15px 0;
 
 				&_item {
 					position: relative;
