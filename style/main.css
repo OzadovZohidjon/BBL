@@ -42,7 +42,10 @@
 }
 
 .inyeksiya .header_main.inyeksiya_header-main .slider_item {
-  background: url(../img/header_img_inyeksiya.png), no-repeat;
+  background: url(../img/header_img_inyeksiya.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
 }
 
 .inyeksiya .header_main.inyeksiya_header-main .slider_item h1 {
@@ -469,7 +472,7 @@
 }
 
 .inyeksiya .section_four-cart .cart_right {
-  background-position: 180px 0px;
+  background-position: 180px 20px;
 }
 
 @media only screen and (min-width: 1199.98px) and (max-width: 1400px) {
@@ -496,6 +499,15 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+  .inyeksiya .header_main.inyeksiya_header-main .slider_item {
+    background: url(../img/inyeksiya/tablet_header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  .inyeksiya .header_main.inyeksiya_header-main .slider_item h1 {
+    width: 36%;
+  }
   .inyeksiya .header_menu .menu_item {
     margin-right: 0;
   }
@@ -592,6 +604,9 @@
   }
   .inyeksiya .section_four .section_four-title h1 {
     font-size: 35px;
+  }
+  .inyeksiya .section_four-cart .cart_right {
+    background-position: 30px 40px;
   }
 }
 
