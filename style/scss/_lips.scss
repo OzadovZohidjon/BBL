@@ -10,11 +10,6 @@ $primary_font: "Corinthia", sans-serif;
 			}
 		}
 	}
-	.header_menu {
-		.menu_item {
-			margin-right: 85px;
-		}
-	}
 
 	// HEADER - END
 
@@ -488,14 +483,12 @@ $primary_font: "Corinthia", sans-serif;
 	@media only screen and (min-width: 1199.98px) and (max-width: 1400px) {
 		.header_menu .menu_item {
 			margin-right: 15px;
-			padding: 0;
 		}
 	}
 
 	@media only screen and (min-width: 1024px) and (max-width: 1199.98px) {
 		.header_menu .menu_item {
 			margin-right: 15px;
-			padding: 0;
 		}
 
 		.btn_purple {
@@ -533,7 +526,7 @@ $primary_font: "Corinthia", sans-serif;
 		// HEADER - START
 		.header_main.lips_header-main {
 			.slider_item {
-				background: url(../../img/lips/header_img.png);
+				background: url(../img/lips/header_img.png);
 				h1 {
 					width: 70%;
 				}
@@ -617,7 +610,7 @@ $primary_font: "Corinthia", sans-serif;
 				.block_left {
 					height: 350px;
 					&-img {
-						background-image: url(../../img/lips/section_one-img.png);
+						background-image: url(../img/lips/section_one-img.png);
 					}
 
 					&-content {
@@ -775,14 +768,11 @@ $primary_font: "Corinthia", sans-serif;
 	@media only screen and (max-width: 667.9px) {
 		.header_menu .menu_item {
 			margin-right: 0;
-			&:nth-child(4) {
-				display: none;
-			}
 		}
 
 		.header_main.lips_header-main {
 			.slider_item {
-				background: url(../../img/lips/header_img-mobile.png);
+				background: url(../img/lips/header_img-mobile.png);
 				background-repeat: no-repeat;
 				background-size: cover;
 				h1 {
