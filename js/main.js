@@ -197,6 +197,13 @@ $('.block_slider').slick({
     nextArrow: $('.section_six-arrow-next')
 });
 
+// $('.plazma_section-six').slick({
+//     arrows: true,
+//     speed: 300,
+//     prevArrow: $('.plazma_section-six-arrow-prev'),
+//     nextArrow: $('.plazma_section-six-arrow-next')
+// });
+
 // Slider four end
 
 // Slider five start

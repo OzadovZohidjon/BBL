@@ -378,7 +378,7 @@
 
 .inyeksiya .section_three {
   margin-bottom: 0;
-  padding-bottom: 120px;
+  padding-bottom: 20px;
 }
 
 .inyeksiya .section_three .section_three-title {
@@ -446,6 +446,10 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.inyeksiya .section_three-stages .section_three-boxes .box {
+  height: 660px;
 }
 
 .inyeksiya .section_four .section_four-title {
@@ -923,6 +927,9 @@
   .inyeksiya .section_three .section_three-stages .section_three-title {
     padding: 0;
   }
+  .inyeksiya .section_three .section_three-stages .section_three-boxes .box {
+    height: auto;
+  }
   .inyeksiya .section_four .section_four-title {
     width: 100%;
   }
@@ -942,6 +949,12 @@
   }
   .inyeksiya .section_six-title {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .inyeksiya .section_four-slider .slider_item .item_img {
+    height: auto;
   }
 }
 
@@ -3756,6 +3769,10 @@
   line-height: 16px;
   text-align: center;
   color: #7449d0;
+}
+
+.plazma .section_two .section_three-stages .section_three-boxes {
+  margin-bottom: 60px;
 }
 
 .plazma .section_six-text p {
@@ -9506,7 +9523,7 @@ video {
   }
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1023px) {
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
   .section_four-cart {
     height: 477px;
   }

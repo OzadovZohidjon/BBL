@@ -302,7 +302,7 @@ $primary_font: "Corinthia", sans-serif;
 
 	.section_three {
 		margin-bottom: 0;
-		padding-bottom: 120px;
+		padding-bottom: 20px;
 		.section_three-title {
 			margin: 40px 0;
 		}
@@ -347,6 +347,14 @@ $primary_font: "Corinthia", sans-serif;
 					font-size: 16px;
 					line-height: 20px;
 					color: #000000;
+				}
+			}
+		}
+
+		&-stages {
+			.section_three-boxes {
+				.box {
+					height: 660px;
 				}
 			}
 		}
@@ -835,6 +843,12 @@ $primary_font: "Corinthia", sans-serif;
 				.section_three-title {
 					padding: 0;
 				}
+
+				.section_three-boxes {
+					.box {
+						height: auto;
+					}
+				}
 			}
 		}
 
@@ -868,6 +882,12 @@ $primary_font: "Corinthia", sans-serif;
 
 		.section_six-title {
 			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 380px) {
+		.section_four-slider .slider_item .item_img {
+			height: auto;
 		}
 	}
 }
