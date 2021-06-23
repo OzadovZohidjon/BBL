@@ -471,55 +471,105 @@ $primary_font: "Corinthia", sans-serif;
 		}
 
 		.price_table {
-			width: 100%;
-			margin-bottom: 40px;
 			.price_list {
+				list-style: none;
+				height: auto;
+				position: relative;
 				width: 100%;
-				.list_head {
-					width: 100%;
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					padding: 4px 30px;
+				margin-bottom: 40px;
 
-					p {
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: bold;
-						font-size: 14px;
-						line-height: 150%;
-						text-transform: uppercase;
-						color: #000000;
+				.list_head,
+				.list_item {
+					display: flex;
+					align-items: center;
+					padding-left: 35px;
+
+					.left {
+						width: 70%;
+					}
+
+					.right {
+						width: 30%;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+
+						.action {
+							width: 50%;
+							text-align: center;
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 59%;
+							text-transform: uppercase;
+							color: #d04949;
+						}
+
+						.price {
+							width: 50%;
+							text-align: center;
+						}
+					}
+				}
+
+				.list_head {
+					margin-bottom: 20px;
+					.left {
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 150%;
+							text-transform: uppercase;
+							color: #000000;
+						}
+					}
+
+					.right {
+						.price {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 14px;
+							line-height: 150%;
+							text-transform: uppercase;
+							color: #000000;
+						}
 					}
 				}
 
 				.list_item {
-					width: 100%;
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					padding: 4px 30px;
-
-					.item_text {
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: normal;
-						font-size: 16px;
-						line-height: 150%;
-						color: #000000;
+					padding: 9px 0 0 35px;
+					.left {
+						p {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 16px;
+							line-height: 150%;
+							color: #000000;
+						}
 					}
 
-					.item_price-number {
-						font-family: $main_font;
-						font-style: normal;
-						font-weight: bold;
-						font-size: 24px;
-						line-height: 150.5%;
-						color: #7449d0;
+					.right {
+						.action {
+							font-size: 24px;
+						}
+
+						.price {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 24px;
+							line-height: 150.5%;
+							color: #7449d0;
+						}
 					}
 
 					&:nth-child(even) {
-						background: #eff9ef;
+						background-color: #eff9ef;
 					}
 				}
 			}
@@ -936,55 +986,61 @@ $primary_font: "Corinthia", sans-serif;
 			}
 
 			.price_table {
-				width: 100%;
-				margin-bottom: 40px;
 				.price_list {
-					width: 100%;
-					.list_head {
-						width: 100%;
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						padding: 4px 30px;
+					margin-bottom: 40px;
 
-						p {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: bold;
-							font-size: 14px;
-							line-height: 150%;
-							text-transform: uppercase;
-							color: #000000;
+					.list_head,
+					.list_item {
+						display: flex;
+						align-items: center;
+						padding-left: 35px;
+
+						.left {
+							width: 70%;
+						}
+
+						.right {
+							width: 30%;
+							display: flex;
+							align-items: center;
+							flex-direction: column-reverse;
+							justify-content: flex-end;
+
+							.action {
+								align-self: flex-end;
+								width: 100%;
+								font-size: 14px;
+							}
+
+							.price {
+								width: 100%;
+								text-align: center;
+							}
 						}
 					}
 
+					.list_head {
+						display: none;
+					}
+
 					.list_item {
-						width: 100%;
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						padding: 4px 30px;
-
-						.item_text {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: normal;
-							font-size: 16px;
-							line-height: 150%;
-							color: #000000;
+						padding: 10px 15px 10px 15px;
+						.left {
+							p {
+								font-size: 14px;
+								line-height: 120%;
+							}
 						}
 
-						.item_price-number {
-							font-family: $main_font;
-							font-style: normal;
-							font-weight: bold;
-							font-size: 24px;
-							line-height: 150.5%;
-							color: #7449d0;
-						}
+						.right {
+							.action {
+								font-size: 18px;
+							}
 
-						&:nth-child(even) {
-							background: #eff9ef;
+							.price {
+								font-size: 24px;
+								line-height: 150.5%;
+							}
 						}
 					}
 				}

@@ -1507,30 +1507,78 @@
   display: none;
 }
 
-.full_face .section_three .price_table {
+.full_face .section_three .price_table .price_list {
+  list-style: none;
+  height: auto;
+  position: relative;
   width: 100%;
   margin-bottom: 40px;
 }
 
-.full_face .section_three .price_table .price_list {
-  width: 100%;
-}
-
-.full_face .section_three .price_table .price_list .list_head {
-  width: 100%;
+.full_face .section_three .price_table .price_list .list_head,
+.full_face .section_three .price_table .price_list .list_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4px 30px;
+  padding-left: 35px;
 }
 
-.full_face .section_three .price_table .price_list .list_head p {
+.full_face .section_three .price_table .price_list .list_head .left,
+.full_face .section_three .price_table .price_list .list_item .left {
+  width: 70%;
+}
+
+.full_face .section_three .price_table .price_list .list_head .right,
+.full_face .section_three .price_table .price_list .list_item .right {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full_face .section_three .price_table .price_list .list_head .right .action,
+.full_face .section_three .price_table .price_list .list_item .right .action {
+  width: 50%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 59%;
+  text-transform: uppercase;
+  color: #d04949;
+}
+
+.full_face .section_three .price_table .price_list .list_head .right .price,
+.full_face .section_three .price_table .price_list .list_item .right .price {
+  width: 50%;
+  text-align: center;
+}
+
+.full_face .section_three .price_table .price_list .list_head {
+  margin-bottom: 20px;
+}
+
+.full_face .section_three .price_table .price_list .list_head .left p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.full_face .section_three .price_table .price_list .list_head .right .price {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1541,20 +1589,10 @@
 }
 
 .full_face .section_three .price_table .price_list .list_item {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4px 30px;
+  padding: 9px 0 0 35px;
 }
 
-.full_face .section_three .price_table .price_list .list_item .item_text {
+.full_face .section_three .price_table .price_list .list_item .left p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1563,7 +1601,11 @@
   color: #000000;
 }
 
-.full_face .section_three .price_table .price_list .list_item .item_price-number {
+.full_face .section_three .price_table .price_list .list_item .right .action {
+  font-size: 24px;
+}
+
+.full_face .section_three .price_table .price_list .list_item .right .price {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1573,7 +1615,7 @@
 }
 
 .full_face .section_three .price_table .price_list .list_item:nth-child(even) {
-  background: #eff9ef;
+  background-color: #eff9ef;
 }
 
 .full_face .section_three .section_four-cart {
@@ -1933,66 +1975,68 @@
   .full_face .section_three .section_three-block_boxes .block_text p br {
     display: unset;
   }
-  .full_face .section_three .price_table {
-    width: 100%;
+  .full_face .section_three .price_table .price_list {
     margin-bottom: 40px;
   }
-  .full_face .section_three .price_table .price_list {
+  .full_face .section_three .price_table .price_list .list_head,
+  .full_face .section_three .price_table .price_list .list_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 35px;
+  }
+  .full_face .section_three .price_table .price_list .list_head .left,
+  .full_face .section_three .price_table .price_list .list_item .left {
+    width: 70%;
+  }
+  .full_face .section_three .price_table .price_list .list_head .right,
+  .full_face .section_three .price_table .price_list .list_item .right {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .full_face .section_three .price_table .price_list .list_head .right .action,
+  .full_face .section_three .price_table .price_list .list_item .right .action {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     width: 100%;
+    font-size: 14px;
+  }
+  .full_face .section_three .price_table .price_list .list_head .right .price,
+  .full_face .section_three .price_table .price_list .list_item .right .price {
+    width: 100%;
+    text-align: center;
   }
   .full_face .section_three .price_table .price_list .list_head {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 4px 30px;
-  }
-  .full_face .section_three .price_table .price_list .list_head p {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 150%;
-    text-transform: uppercase;
-    color: #000000;
+    display: none;
   }
   .full_face .section_three .price_table .price_list .list_item {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 4px 30px;
+    padding: 10px 15px 10px 15px;
   }
-  .full_face .section_three .price_table .price_list .list_item .item_text {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    color: #000000;
+  .full_face .section_three .price_table .price_list .list_item .left p {
+    font-size: 14px;
+    line-height: 120%;
   }
-  .full_face .section_three .price_table .price_list .list_item .item_price-number {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
+  .full_face .section_three .price_table .price_list .list_item .right .action {
+    font-size: 18px;
+  }
+  .full_face .section_three .price_table .price_list .list_item .right .price {
     font-size: 24px;
     line-height: 150.5%;
-    color: #7449d0;
-  }
-  .full_face .section_three .price_table .price_list .list_item:nth-child(even) {
-    background: #eff9ef;
   }
   .full_face .section_three .section_four-cart {
     margin-bottom: 40px;
