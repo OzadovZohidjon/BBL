@@ -2136,6 +2136,10 @@
   background-image: url(../img/lips/section_one-img.png);
 }
 
+.lips .section_one-blocks .block_left-content {
+  padding: 44px 44px 44px 55px;
+}
+
 .lips .section_one-blocks .block_left-content .content_title {
   font-size: 16px;
   line-height: 30px;
@@ -9608,26 +9612,55 @@ video {
   }
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1024px) {
+@media only screen and (min-width: 991px) and (max-width: 1054px) {
   .section_four-cart {
     height: 477px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
   .section_four-cart .cart_left {
+    width: 40%;
     padding: 120px 40px 0 40px;
   }
   .section_four-cart .cart_left .cart_title {
     margin-bottom: 65px;
   }
   .section_four-cart .cart_left .cart_title h1 {
+    width: 100%;
     font-size: 30px;
     line-height: 37px;
   }
+  .section_four-cart .cart_left .cart_text {
+    position: absolute;
+    width: 60%;
+  }
+  .section_four-cart .cart_left .cart_text p {
+    font-size: 14px;
+  }
   .section_four-cart .cart_right {
+    width: 55%;
+    padding: 95px 0 0 0;
     background-position: 30px 40px;
   }
   .section_four-cart .cart_right .cart_btn {
     -webkit-transform: translateY(40px);
             transform: translateY(40px);
+  }
+  .section_four-cart .cart_right .cart_number {
+    display: none;
+  }
+  .section_four-cart .cart_right .cart_number .number {
+    font-size: 18px;
+  }
+  .section_four-cart .cart_right .cart_number .metro {
+    list-style: none;
+  }
+  .section_four-cart .cart_right .cart_number .metro_item {
+    font-size: 12px;
   }
 }
 
@@ -9719,12 +9752,7 @@ video {
             flex-direction: column;
   }
   .header_top-top .top_block p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 22px;
     margin-bottom: 0;
-    color: #000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9737,11 +9765,19 @@ video {
             flex-direction: row-reverse;
   }
   .header_top-top .top_block p a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+  }
+  .header_top-top .top_block p span {
     width: 60px;
     height: 24px;
     text-align: center;
   }
-  .header_top-top .top_block p a img {
+  .header_top-top .top_block p span img {
     width: 100%;
     margin-top: -7px;
   }

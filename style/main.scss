@@ -4929,7 +4929,6 @@ video {
 			position: relative;
 			align-items: unset;
 			justify-content: space-between;
-
 			height: 400px;
 			.cart_left {
 				width: 40%;
@@ -5632,27 +5631,53 @@ video {
 	// MODALS - END
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1024px) {
+@media only screen and (min-width: 991px) and (max-width: 1054px) {
 	.section_four-cart {
 		height: 477px;
+		justify-content: space-between;
+		align-items: unset;
 
 		.cart_left {
+			width: 40%;
 			padding: 120px 40px 0 40px;
 
 			.cart_title {
 				margin-bottom: 65px;
 				h1 {
+					width: 100%;
 					font-size: 30px;
 					line-height: 37px;
+				}
+			}
+			.cart_text {
+				position: absolute;
+				width: 60%;
+				p {
+					font-size: 14px;
 				}
 			}
 		}
 
 		.cart_right {
+			width: 55%;
+			padding: 95px 0 0 0;
 			background-position: 30px 40px;
 
 			.cart_btn {
 				transform: translateY(40px);
+			}
+			.cart_number {
+				display: none;
+				.number {
+					font-size: 18px;
+				}
+				.metro {
+					list-style: none;
+
+					&_item {
+						font-size: 12px;
+					}
+				}
 			}
 		}
 	}
@@ -5737,17 +5762,21 @@ video {
 				justify-content: space-between;
 				flex-direction: column;
 				p {
-					font-family: $main_font;
-					font-size: 18px;
-					font-weight: normal;
-					line-height: 22px;
 					margin-bottom: 0;
-					color: #000;
 					display: flex;
 					align-items: center;
 					flex-direction: row-reverse;
 
 					a {
+						text-decoration: none;
+						color: #000;
+						font-family: $main_font;
+						font-size: 18px;
+						font-weight: normal;
+						line-height: 22px;
+					}
+
+					span {
 						width: 60px;
 						height: 24px;
 						text-align: center;
