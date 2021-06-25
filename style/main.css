@@ -5337,7 +5337,7 @@ video {
 }
 
 .section_three-slider .slider_item .item_left {
-  width: 52%;
+  width: 49.5%;
   height: 470px;
 }
 
@@ -5530,6 +5530,8 @@ video {
 .section_three-blocks .block_left video[poster] {
   -o-object-fit: none;
      object-fit: none;
+  -o-object-position: top;
+     object-position: top;
   background-color: transparent;
 }
 
@@ -6446,6 +6448,19 @@ video {
   margin-top: 5px;
   -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_seven-blocks .slider_block .slider_item .slider_item-content:hover {
+  background-color: #472297;
+}
+
+.section_seven-blocks .slider_block .slider_item .slider_item-content:hover a,
+.section_seven-blocks .slider_block .slider_item .slider_item-content:hover h3 {
+  color: #f1ecfa;
+}
+
+.section_seven-blocks .slider_block .slider_item .slider_item-content:hover a span {
+  background-color: #7449d0;
 }
 
 .section_seven-blocks .slider_block .slick-prev {
@@ -7897,6 +7912,10 @@ video {
     height: 330px;
     border-radius: 30px;
   }
+  .section_three-blocks .block_left video[poster] {
+    -o-object-position: unset;
+       object-position: unset;
+  }
   .section_three-blocks .block_left .video-js .vjs-big-play-button::before {
     top: -90px;
     left: -170px;
@@ -8970,6 +8989,8 @@ video {
   .section_three-blocks .block_left video[poster] {
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: unset;
+       object-position: unset;
   }
   .section_three-blocks .block_left .video-js .vjs-big-play-button {
     width: 68px;
@@ -10433,6 +10454,8 @@ video {
   .section_three-blocks .block_left video[poster] {
     -o-object-fit: contain;
        object-fit: contain;
+    -o-object-position: unset;
+       object-position: unset;
   }
   .section_three-blocks .block_left .video-js .vjs-big-play-button {
     width: 68px;

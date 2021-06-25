@@ -946,7 +946,7 @@ video {
 			align-items: center;
 
 			.item_left {
-				width: 52%;
+				width: 49.5%;
 				height: 470px;
 
 				.before {
@@ -1122,6 +1122,7 @@ video {
 
 			video[poster] {
 				object-fit: none;
+				object-position: top;
 				background-color: transparent;
 			}
 
@@ -1962,6 +1963,19 @@ video {
 							margin-left: 80%;
 							margin-top: 5px;
 							box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+						}
+					}
+
+					&:hover {
+						background-color: #472297;
+
+						a,
+						h3 {
+							color: #f1ecfa;
+						}
+
+						a span {
+							background-color: #7449d0;
 						}
 					}
 				}
@@ -3375,6 +3389,10 @@ video {
 				height: 330px;
 				border-radius: 30px;
 
+				video[poster] {
+					object-position: unset;
+				}
+
 				.video-js {
 					.vjs-big-play-button {
 						&::before {
@@ -4765,6 +4783,7 @@ video {
 
 				video[poster] {
 					object-fit: cover;
+					object-position: unset;
 				}
 
 				.video-js {
@@ -6497,6 +6516,7 @@ video {
 
 				video[poster] {
 					object-fit: contain;
+					object-position: unset;
 				}
 
 				.video-js {
