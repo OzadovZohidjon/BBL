@@ -309,6 +309,22 @@ const reviewsModalOpenBtn = document.querySelectorAll('.reviews-modal-open-btn')
 const reviewsModalCloseBtn = document.querySelector('.reviews-modal-close-btn');
 const reviewsModal = document.querySelector('.modal-four');
 
+const modalThree = document.querySelectorAll('.modal-three');
+
+modalThree.forEach((el) => {
+    el.querySelector('.form-modal-open-btn').addEventListener('click', () => {
+        el.classList.remove('active');
+
+        formModal.classList.add('active');
+    })
+
+    el.querySelector('.second-modal-open-btn').addEventListener('click', () => {
+        el.classList.remove('active');
+
+        secondModal.classList.add('active');
+    })
+})
+
 if (window.screen.width > 576) {
     bioModalOpenBtn.forEach(el => {
         el.addEventListener('click', () => {
@@ -366,7 +382,6 @@ secondModalOpenBtn.forEach(el => {
     el.addEventListener('click', () => {
         secondModal.classList.add('active');
         bioModal.classList.remove('active');
-
     })
 })
 

@@ -482,6 +482,25 @@ $primary_font: "Corinthia", sans-serif;
 
 	// MEDIA QUERIES START
 
+	@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+		.section_one {
+			&-blocks {
+				.block_left {
+					&-content {
+						padding: 24px 24px 24px 35px;
+					}
+				}
+
+				.block_right {
+					h3 {
+						font-size: 20px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+
 	@media only screen and (min-width: 1199.98px) and (max-width: 1400px) {
 		.header_menu .menu_item {
 			margin-right: 15px;

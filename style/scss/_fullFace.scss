@@ -596,6 +596,30 @@ $primary_font: "Corinthia", sans-serif;
 		width: 65%;
 	}
 
+	@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+		.section_one-blocks {
+			.block_left {
+				h1 {
+					font-size: 32px;
+					line-height: 43px;
+				}
+			}
+
+			.block_right {
+				padding: 26px 51px 27px 29px;
+
+				h3 {
+					font-size: 20px;
+					line-height: 36px;
+				}
+			}
+		}
+
+		.section_three-stages .section_three-boxes .box {
+			height: 500px;
+		}
+	}
+
 	@media only screen and (min-width: 1199.98px) and (max-width: 1400px) {
 		.header_menu .menu_item {
 			margin-right: 15px;
