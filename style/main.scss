@@ -4,6 +4,7 @@
 @import "./scss/_fullFace.scss";
 @import "./scss/_lips.scss";
 @import "./scss/_plazma.scss";
+@import "./scss/_zeltik.scss";
 * {
 	margin: 0;
 	padding: 0;
@@ -3460,13 +3461,13 @@ video {
 						.box_title {
 							margin: 20px 0;
 							h4 {
-								font-size: 15px;
+								font-size: 16px;
 							}
 						}
 
 						.box_text {
 							p {
-								font-size: 12px;
+								font-size: 14px;
 							}
 						}
 					}
@@ -5861,11 +5862,15 @@ video {
 					width: 50%;
 				}
 			}
+
+			.mobile_menu-btn {
+				display: none;
+			}
 		}
 
 		&_logo {
-			width: 60%;
-			margin: 0 auto;
+			width: 70%;
+			margin: 0 30px 0 0;
 
 			img {
 				width: 90%;
