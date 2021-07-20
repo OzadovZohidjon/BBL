@@ -10802,10 +10802,10 @@ video {
     width: 50%;
   }
   .header_top .mobile_menu-btn {
-    display: none;
+    opacity: 0;
   }
   .header_logo {
-    width: 60%;
+    width: 54%;
     margin: 0 auto;
   }
   .header_logo img {
