@@ -5063,6 +5063,13 @@
     color: #ffffff;
     z-index: 2;
   }
+  .zeltik .section_three-blocks .block_left video[poster] {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .zeltik .section_three-blocks .block_left {
+    margin-bottom: 20px;
+  }
   .zeltik .section_two .section_two-title,
   .zeltik .section_three .section_two-title {
     width: 100%;
@@ -10799,7 +10806,7 @@ video {
   }
   .header_logo {
     width: 70%;
-    margin: 0 30px 0 0;
+    margin: 0 auto;
   }
   .header_logo img {
     width: 90%;
