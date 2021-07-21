@@ -4604,6 +4604,11 @@
   color: #000000;
 }
 
+.zeltik .section_three-blocks .block_left video[poster] {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .zeltik .section_four-slider .slider_item .item_img {
   position: relative;
   margin-bottom: 20px;

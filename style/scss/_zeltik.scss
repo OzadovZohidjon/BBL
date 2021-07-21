@@ -194,6 +194,9 @@ $primary_font: "Corinthia", sans-serif;
 		}
 	}
 
+	.section_three-blocks .block_left video[poster] {
+		object-fit: cover;
+	}
 	.section_four-slider {
 		.slider_item {
 			.item_img {
