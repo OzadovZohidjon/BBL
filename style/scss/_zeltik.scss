@@ -241,7 +241,8 @@ $primary_font: "Corinthia", sans-serif;
 				text-transform: uppercase;
 				width: 98%;
 				p {
-					font-weight: bold;
+					font-weight: normal;
+					text-transform: none;
 				}
 			}
 		}
@@ -265,7 +266,7 @@ $primary_font: "Corinthia", sans-serif;
 				text-transform: uppercase;
 				width: 98%;
 				p {
-					font-weight: bold;
+					font-weight: normal;
 				}
 			}
 		}
@@ -315,6 +316,172 @@ $primary_font: "Corinthia", sans-serif;
 						line-height: 171.5%;
 						text-transform: uppercase;
 						color: #000000;
+					}
+				}
+			}
+		}
+
+		.nozzles {
+			position: relative;
+			height: auto;
+			margin-bottom: 60px;
+
+			&__title {
+				margin-bottom: 10px;
+				h1 {
+					font-family: $main_font;
+					font-size: 35px;
+					line-height: 43px;
+					font-weight: normal;
+					text-align: center;
+					text-transform: uppercase;
+					color: #7449d0;
+				}
+			}
+
+			&__blocks {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				background: url(../img/zeltik/rounds_bg.png);
+				background-position: center;
+				background-repeat: no-repeat;
+
+				.block__img {
+					.img__wrap {
+						img {
+							height: 100%;
+						}
+					}
+				}
+
+				.block__nozzles {
+					padding-top: 75px;
+					.block__title {
+						width: 60%;
+
+						margin-bottom: 30px;
+						h3 {
+							font-family: $main_font;
+							font-style: normal;
+							font-weight: normal;
+							font-size: 18px;
+							line-height: 22px;
+							text-transform: uppercase;
+							color: #7449d0;
+						}
+					}
+
+					.items__title {
+						font-family: $main_font;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 150%;
+						color: #000000;
+						margin-bottom: 15px;
+
+						strong {
+							font-weight: bold;
+							font-size: 18px;
+							line-height: 150%;
+						}
+					}
+
+					.block__items {
+						display: flex;
+						flex-wrap: wrap;
+						.item {
+							position: relative;
+							padding: 10px 30px;
+							border: 1px dashed #e3d6ff;
+							border-radius: 8px;
+							margin-bottom: 10px;
+							transition: all 0.3s ease;
+							.item__img {
+								margin: 0 auto;
+								text-align: center;
+
+								img {
+									text-align: center;
+								}
+							}
+							.item__text {
+								font-family: $main_font;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 16px;
+								line-height: 150%;
+								text-align: center;
+								color: #000000;
+							}
+
+							&::before {
+								content: "";
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 42px;
+								height: 42px;
+								background-color: #7248ce;
+								border-radius: 0px 4px 0px 0px;
+								border: 1px solid #7248ce;
+								z-index: -1;
+							}
+
+							&::after {
+								content: "";
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 44px;
+								height: 44px;
+								background-color: #fff;
+								border: 1px solid #fff;
+								border-radius: 0px 4px 0px 0px;
+
+								z-index: 0;
+							}
+
+							&:hover {
+								border: 1px solid #7248ce;
+
+								&::after {
+									border-radius: 0px 60px 0px 0px;
+								}
+							}
+						}
+					}
+				}
+
+				.block_left {
+					width: 40%;
+
+					.block__items {
+						width: 70%;
+					}
+				}
+
+				.block_right {
+					width: 40%;
+
+					.block__title {
+						margin-left: auto;
+						margin-right: 0;
+						text-align: right;
+					}
+
+					.items__title {
+						text-align: right;
+					}
+
+					.block__items {
+						text-align: right;
+						justify-content: flex-end;
+
+						.item {
+							margin-left: 10px;
+						}
 					}
 				}
 			}

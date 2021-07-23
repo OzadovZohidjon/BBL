@@ -4662,7 +4662,8 @@
 }
 
 .zeltik .section_four-slider .slider_item .item_text p {
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: none;
 }
 
 .zeltik .slider--two .slider_item .item_img {
@@ -4685,7 +4686,7 @@
 }
 
 .zeltik .slider--two .slider_item .item_text p {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .zeltik .section_four-title {
@@ -4743,6 +4744,182 @@
   line-height: 171.5%;
   text-transform: uppercase;
   color: #000000;
+}
+
+.zeltik .section_four .nozzles {
+  position: relative;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.zeltik .section_four .nozzles__title {
+  margin-bottom: 10px;
+}
+
+.zeltik .section_four .nozzles__title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7449d0;
+}
+
+.zeltik .section_four .nozzles__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: url(../img/zeltik/rounds_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zeltik .section_four .nozzles__blocks .block__img .img__wrap img {
+  height: 100%;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles {
+  padding-top: 75px;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__title {
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #7449d0;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .items__title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .items__title strong {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item {
+  position: relative;
+  padding: 10px 30px;
+  border: 1px dashed #e3d6ff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item .item__img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item .item__img img {
+  text-align: center;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item .item__text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #7248ce;
+  border-radius: 0px 4px 0px 0px;
+  border: 1px solid #7248ce;
+  z-index: -1;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0px 4px 0px 0px;
+  z-index: 0;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item:hover {
+  border: 1px solid #7248ce;
+}
+
+.zeltik .section_four .nozzles__blocks .block__nozzles .block__items .item:hover::after {
+  border-radius: 0px 60px 0px 0px;
+}
+
+.zeltik .section_four .nozzles__blocks .block_left {
+  width: 40%;
+}
+
+.zeltik .section_four .nozzles__blocks .block_left .block__items {
+  width: 70%;
+}
+
+.zeltik .section_four .nozzles__blocks .block_right {
+  width: 40%;
+}
+
+.zeltik .section_four .nozzles__blocks .block_right .block__title {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+.zeltik .section_four .nozzles__blocks .block_right .items__title {
+  text-align: right;
+}
+
+.zeltik .section_four .nozzles__blocks .block_right .block__items {
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.zeltik .section_four .nozzles__blocks .block_right .block__items .item {
+  margin-left: 10px;
 }
 
 .zeltik .section_four .price_table {
